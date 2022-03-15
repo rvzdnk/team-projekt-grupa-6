@@ -1,0 +1,59 @@
+.review {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+
+.review-gallery {
+    display: flexbox;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    &__opinion {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    &__reviewer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    &__p {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        background-color: #FAFAFA;
+        border-bottom: 1px solid rgba(225, 225, 225, 1)}
+    &__p::before {
+            content: "\0022";
+            color:#E1E1E1;
+        }
+    &__deco {
+        max-width: 100%;
+        height: 14px;
+        white-space:normal;
+        justify-content: center;
+    }
+    &__ellipse {
+        box-sizing: border-box;
+        display: inline-block;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: #C7133E;
+        margin: 10px;
+    }
+}
+
+.container {
+    width: 100vw;
+}
+
+* {
+    box-sizing: border-box;
+}
