@@ -4,6 +4,9 @@
  */
 
 // Style dla pliku z przykładem HTML fragmentu
-@import './example';
+// @import './example';
+@import './base/common';
+
 @import './components/gallery';
-@import './components/review'
+@import './components/review';
+@import './components/products';

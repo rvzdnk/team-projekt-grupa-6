@@ -1,0 +1,109 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+.products__description {
+  font-family: 'Titan One';
+  font-size: 18px;
+  line-height: 1.167;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffa5ba;
+  margin: 0;
+  margin-bottom: 15px;
+}
+.products__title {
+  font-family: 'Titan One';
+  font-size: 34px;
+  line-height: 1.147;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+  padding-bottom: 140px;
+}
+
+.products__item {
+  background: #ffb8ca;
+  border-radius: 24px;
+  max-width: 280px;
+  max-height: 485px;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+
+  &:nth-child(2) {
+    background: #f0d1a5;
+  }
+  &:nth-child(3) {
+    background: #c2e297;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 113px;
+  }
+
+  &::before {
+    content: url(../images/products/products-ice_cream.png);
+    display: block;
+    width: 249px;
+    height: 252px;
+    margin: 0 auto;
+    position: absolute;
+    top: -113px;
+    left: 16px;
+  }
+
+  &:nth-child(2)::before {
+    content: url(../images/products/products-ice_coffee.png);
+  }
+  &:nth-child(3)::before {
+    content: url(../images/products/products-milkshake.png);
+  }
+}
+
+.products__item-title {
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-top: 161px;
+
+  &::after {
+    content: url(../images/products/products-ellipses.svg);
+    display: block;
+    padding-top: 13px;
+    width: 26px;
+    margin: 0 auto;
+  }
+}
+.products__item-description {
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  max-width: 200px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.btn__products {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-image: url(../images/products/products-btn.svg);
+  margin-bottom: 41px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
