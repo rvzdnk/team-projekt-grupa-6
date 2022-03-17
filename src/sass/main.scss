@@ -1,12 +1,11 @@
-/*
- * Główny plik dla stylów.
- * Wszystkie partials podłączamy tutaj.
- */
 
-// Style dla pliku z przykładem HTML fragmentu
-// @import './example';
-@import './base/common';
+@import "./base/common";
 
-@import './components/gallery';
-@import './components/review';
-@import './components/products';
+@import "./components/gallery";
+@import "./components/review";
+@import "./components/products";
+@import "./components/mobile-menu";
+@import "./components/modal-window";
+
+@import "./layout/header";
+@import "./layout/navigation";
