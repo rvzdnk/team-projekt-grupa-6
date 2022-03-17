@@ -1,37 +1,172 @@
-@charset "UTF-8";
-/*
- * Główny plik dla stylów.
- * Wszystkie partials podłączamy tutaj.
- */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
-p {
-  padding: 0;
-}
-
 ul {
-  padding: 0;
-  margin: 0;
-}
-
-.list {
   list-style: none;
 }
 
-.link {
+a {
   text-decoration: none;
 }
 
-img {
-  display: block;
+.logo {
+  position: absolute;
+  width: 199px;
+  height: 50px;
+  left: 20px;
+  top: 6px;
 }
+
+@media screen and (min-width: 768px) {
+  .logo {
+    left: 34px;
+    top: 37px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    left: 46px;
+  }
+}
+
+.mobile-menu__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  background-color: transparent;
+}
+
+.mobile-menu__btn-icon {
+  width: 20px;
+  height: 12px;
+}
+
+.mobile-menu {
+  background-color: #E17992;
+  width: 250px;
+  height: 502px;
+}
+
+@media screen and (min-width: 1200px) {
+  .mobile-menu__btn {
+    display: none;
+  }
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.modal-window_open-btn {
+  display: none;
+  width: 159px;
+  height: 44px;
+  background: #FFFFFF;
+  border-radius: 22px;
+  border: none;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #D41443;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-window_open-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.hero-header {
+  background-color: #FFB8CA;
+  max-width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 6px;
+}
+
+.main-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-header {
+    padding-left: 34px;
+    padding-top: 37px;
+    padding-right: 34px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-header {
+    padding-left: 48px;
+  }
+}
+
+.nav__list {
+  display: none;
+}
+
+.nav__link {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFFFFF;
+}
+
+.nav__link :active {
+  color: #D41443;
+}
+
+@media screen and (min-width: 1200px) {
+  .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .nav__item:not(:last-child) {
+    padding-right: 35px;
+  }
 
 .review {
   display: -webkit-box;
@@ -126,8 +261,8 @@ img {
   border-radius: 50%;
   background-color: #C7133E;
   margin: 10px;
-}
-
+ }
+  
 .container {
   width: 100vw;
 }
@@ -135,242 +270,4 @@ img {
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-.container {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.section.products {
-  margin-bottom: 98px;
-  margin-top: 121px;
-}
-
-.products__description {
-  font-family: 'Titan One';
-  font-size: 18px;
-  line-height: 1.167;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffa5ba;
-  margin: 0;
-  margin-bottom: 15px;
-}
-
-.products__title {
-  font-family: 'Titan One';
-  font-size: 34px;
-  line-height: 1.147;
-  text-align: center;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #d41443;
-  padding-bottom: 140px;
-}
-
-.products__item {
-  background: #ffb8ca;
-  border-radius: 24px;
-  max-width: 280px;
-  max-height: 485px;
-  text-align: center;
-  margin: 0 auto;
-  position: relative;
-}
-
-.products__item:nth-child(2) {
-  background: #f0d1a5;
-}
-
-.products__item:nth-child(3) {
-  background: #c2e297;
-}
-
-.products__item:not(:last-child) {
-  margin-bottom: 113px;
-}
-
-.products__item::before {
-  content: url(../images/products/products-ice_cream.png);
-  display: block;
-  width: 249px;
-  height: 252px;
-  margin: 0 auto;
-  position: absolute;
-  top: -113px;
-  left: 16px;
-}
-
-.products__item:nth-child(2)::before {
-  content: url(../images/products/products-ice_coffee.png);
-}
-
-.products__item:nth-child(3)::before {
-  content: url(../images/products/products-milkshake.png);
-}
-
-.products__item-title {
-  font-family: 'Titan One';
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #ffffff;
-  padding-top: 161px;
-}
-
-.products__item-title::after {
-  content: url(../images/products/products-ellipses.svg);
-  display: block;
-  padding-top: 13px;
-  width: 26px;
-  margin: 0 auto;
-}
-
-.products__item-description {
-  font-family: 'DM Sans';
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.5;
-  text-align: center;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-  max-width: 200px;
-  margin: 0 auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.btn__products {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: none;
-  background-image: url(../images/products/products-btn.svg);
-  margin-bottom: 41px;
-}
-
-@media screen and (min-width: 480px) {
-  .container {
-    max-width: 480px;
   }
-}
-
-@media screen and (min-width: 768px) {
-  .section.products {
-    margin-bottom: 112px;
-  }
-  .container {
-    max-width: 768px;
-    padding: 0 34px;
-  }
-  .products__description {
-    font-size: 26px;
-    line-height: 1.154;
-  }
-  .products__title {
-    font-size: 48px;
-    line-height: 1.146;
-    padding-bottom: 150px;
-  }
-  .products__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .products__item {
-    min-width: 220px;
-    margin: 0;
-  }
-  .products__item:not(:last-child) {
-    margin-right: 30px;
-    margin-bottom: 0;
-  }
-  .products__item::before {
-    content: url(../images/products/products-ice_cream-tablet.png);
-    width: 220px;
-    height: 226px;
-    top: -104px;
-    left: auto;
-  }
-  .products__item:nth-child(2)::before {
-    content: url(../images/products/products-ice_coffee-tablet.png);
-  }
-  .products__item:nth-child(3)::before {
-    content: url(../images/products/products-milkshake-tablet.png);
-  }
-  .products__item-title {
-    padding-top: 152px;
-  }
-  .products__item-description {
-    line-height: 1.786;
-    max-width: 198px;
-    max-height: 124px;
-    overflow: hidden;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .section.products {
-    margin-top: 127px;
-    margin-bottom: 119px;
-  }
-  .container {
-    max-width: 1280px;
-  }
-  .products__description {
-    font-size: 30px;
-    line-height: 1.133;
-    letter-spacing: 0.04em;
-  }
-  .products__title {
-    font-size: 58px;
-    line-height: 1.134;
-    letter-spacing: 0.06em;
-    padding-bottom: 259px;
-  }
-  .products__item {
-    min-width: 325px;
-    min-height: 525px;
-  }
-  .products__item:not(:last-child) {
-    margin-right: 27px;
-  }
-  .products__item::before {
-    content: url(../images/products/products-ice_cream-desktop.png);
-    width: 335px;
-    height: 335px;
-    top: -208px;
-  }
-  .products__item:nth-child(2)::before {
-    content: url(../images/products/products-ice_coffee-desktop.png);
-  }
-  .products__item:nth-child(3)::before {
-    content: url(../images/products/products-milkshake-desktop.png);
-  }
-  .products__item-title {
-    font-size: 30px;
-    line-height: 1.133;
-    letter-spacing: 0.04em;
-    padding-top: 163px;
-  }
-  .products__item-description {
-    max-width: 241px;
-    max-height: 106px;
-    font-size: 16px;
-    line-height: 1.75;
-    letter-spacing: 0.04em;
-    margin-top: 32px;
-    margin-bottom: 62px;
-  }
-  .btn__products {
-    margin-bottom: 50px;
-  }
-}
-/*# sourceMappingURL=main.css.map */

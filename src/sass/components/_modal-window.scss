@@ -1,0 +1,24 @@
+.modal-window_open-btn{
+    display:none;
+    width: 159px;
+    height: 44px;  
+    background: #FFFFFF;
+    border-radius: 22px; 
+    border: none;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: #D41443;
+    justify-content: center;
+}
+
+@media screen and (min-width:768px){
+.modal-window_open-btn{ 
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    }
+}
