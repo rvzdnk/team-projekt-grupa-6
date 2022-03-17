@@ -11,6 +11,7 @@
         "components/_review.scss",
         "layout/_header.scss",
         "layout/_navigation.scss"
+
     ],
     "names": [],
     "file": "main.css"
