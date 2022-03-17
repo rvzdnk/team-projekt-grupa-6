@@ -1,0 +1,28 @@
+.mobile-menu__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+}
+
+.mobile-menu__btn-icon{
+    width: 20px;
+    height: 12px; 
+}
+
+.mobile-menu{
+    background-color:#E17992;
+    width: 250px;
+    height: 502px;
+}
+
+@media screen and (min-width:1200px){
+.mobile-menu__btn{
+    display: none;
+    }
+}
+
+.mobile-menu{
+    display: none;
+}
