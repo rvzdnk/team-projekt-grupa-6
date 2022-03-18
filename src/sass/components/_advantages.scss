@@ -21,6 +21,8 @@
 
   .advantages__title-hidden {
     visibility: hidden;
+    margin: 0;
+    max-height: 0px;
   }
 
   .advantages__title {
@@ -36,7 +38,7 @@
 
   .advantages__list {
    padding: 0;
-   margin-top: 39px;
+   margin-top: 55px;
    margin-bottom: 145px;
   }
   
