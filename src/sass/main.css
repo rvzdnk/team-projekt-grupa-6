@@ -33,8 +33,6 @@ a {
 }
 
 .section.advantages {
-  margin-bottom: 98px;
-  margin-top: 121px;
   background-color: #FFF5F6;
 }
 
@@ -80,10 +78,11 @@ a {
 
 .advantages__item:nth-child(3) {
   background: #FFF5F6;
+  padding-bottom: 145px;
 }
 
 .advantages__item:not(:last-child) {
-  margin-bottom: 113px;
+  margin-bottom: 38px;
 }
 
 .advantages__item::before {
@@ -107,6 +106,7 @@ a {
 
 .advantages__item-title {
   text-align: center;
+  margin: 0px;
   padding-top: 46px;
   font-family: 'Titan One';
   font-style: normal;
@@ -121,8 +121,7 @@ a {
 .advantages__item-description {
   text-align: center;
   max-width: 230px;
-  margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 19px;
   margin-bottom: 30px;
   font-family: 'DM Sans';
   font-style: normal;
