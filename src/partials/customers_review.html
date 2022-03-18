@@ -1,0 +1,108 @@
+     <!-- head just to look during programming -->
+     <!DOCTYPE html>
+     <html lang="pl">
+       <head>
+         <meta charset="UTF-8" />
+         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+         <title>Ice Cream Passion</title>
+         <link
+           rel="stylesheet"
+           href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+           integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+           crossorigin="anonymous"
+         />
+         <link rel="preconnect" href="https://fonts.googleapis.com" />
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+         <link
+           href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+           rel="stylesheet"
+         />
+     
+         <link rel="stylesheet" href="../sass/main.css" />
+         <body></body>
+       </head> 
+</html>
+<!-- end just to look head -->
+     
+     
+     <!-- gallery -->
+    <div class="container">
+      <picture class="gallery">
+        <source
+          srcset="../images/gallery/gallery_320.png 320w, ../images/gallery/gallery_320@2.png 640w"
+          media="(max-width: 767px) 480px, 100vw"
+        />
+        <source
+          srcset="../images/gallery/gallery_768.png 768w, ../images/gallery/gallery_768@2.png 1539w"
+          media="(min-width: 768px) 768px, 100vw"
+        />
+        <source
+          srcset="../images/gallery/gallery_1280.png 1280w, ../images/gallery/gallery_1280@2.png 2560w"
+          media="(min-width: 1200px) 1200px, 100vw"
+        />
+        <img src="../images/gallery/gallery_320.jpg" alt="Our ice creams gallery" />
+      </picture>
+    </div>
+    <!-- Customers review -->
+    <div class="review container">
+        <div class="review-gallery">
+            <div class="review-gallery__opinion">
+                    <div class="review-gallery__reviewer">
+                        <img
+                        class="review-gallery__img"
+                        src="../images/reviewers/reviewer_1.jpg"
+                        alt="Emily"
+                        />
+                    </div>
+          <p class="review-gallery__p">
+            Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+            hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+          </p>
+          <div class="review-gallery__deco">
+              <span class="review-gallery__ellipse"></span>
+              <span class="review-gallery__ellipse"></span>
+              <span class="review-gallery__ellipse"></span>
+          </div>
+          <p> Emily, Los Angeles</p>
+            </div>
+            <div class="review-gallery__opinion">
+                <div class="review-gallery__reviewer">
+                    <img
+                    class="review-gallery__reviewer"
+                    src="../images/reviewers/reviewer_2.jpg"
+                    alt="Kate"
+                    />
+                </div>
+                <p class="review-gallery__p">Opinion number 2</p>
+                <div class="review-gallery__deco">
+                    <span class="review-gallery__ellipse"></span>
+                    <span class="review-gallery__ellipse"></span>
+                    <span class="review-gallery__ellipse"></span>
+                </div>
+                <p>Kate, Los Santos</p>
+            </div>
+            <div class="review-gallery__opinion">
+                <div class="review-gallery__reviewer">
+                    <img
+                    class="review-gallery__reviewer"
+                    src="../images/reviewers/reviewer_3.jpg"
+                    alt="Jessica"
+                     />
+                </div>
+            <p class="review-gallery__p">Opinion number 3</p>
+            <div class="review-gallery__deco">
+                <span class="review-gallery__ellipse"></span>
+                <span class="review-gallery__ellipse"></span>
+                <span class="review-gallery__ellipse"></span>
+            </div>
+            <p> Jessica, Cracow</p>
+            </div>          
+            <div class="review-gallery__display">
+            <div class="review-gallery__button--left" onclick="plusDivs(-1)">&#10094;</div>
+            <div class="review-gallery__button--right" onclick="plusDivs(1)">&#10095;</div>
+            <span class="review-gallery__indicator" onclick="currentDiv(1)"></span>
+            <span class="review-gallery__indicator" onclick="currentDiv(2)"></span>
+            <span class="review-gallery__indicator" onclick="currentDiv(3)"></span>
+            </div>
+      </div>
+    <script src="../slide.js"></script>
