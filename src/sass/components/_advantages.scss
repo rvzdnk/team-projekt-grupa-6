@@ -56,11 +56,11 @@
     &::before {
       content: url(../images/advantages/advantages1.png);
       display: block;
-      width: 249px;
-      height: 252px;
+      width: 230px;
+      height: 156px;
       margin: 0 auto;
       position: absolute;
-      top: -113px;
+      top: -16px;
       left: 16px;
     }
   
@@ -78,7 +78,7 @@
     text-align: center;
     
     
-    padding-top: 161px;
+    padding-top: 46px;
 
 
     font-family: 'Titan One';
@@ -90,14 +90,6 @@
     text-transform: uppercase;
     color: #D41443;
 
-    
-    &::after {
-      content: url(../images/products/products-ellipses.svg);
-      display: block;
-      padding-top: 13px;
-      width: 26px;
-      margin: 0 auto;
-    }
   }
   .advantages__item-description {
     
