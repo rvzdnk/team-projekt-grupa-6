@@ -16,9 +16,15 @@
     padding-left: 34px;
     padding-top: 37px;
     padding-right: 34px;
-    padding-bottom: 37px;
+    padding-bottom: 0;
     }
+.menu-buttons{
+    display: flex;
 }
+
+}
+
+
 
 @media screen and (min-width: 1200px){
 .main-header{

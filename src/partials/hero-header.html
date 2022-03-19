@@ -50,6 +50,7 @@
                 </li>
             </ul>
         </nav>
+        <div class="menu-buttons">
             <!-- Button Open Mobile Menu -->
                 <button class="mobile-menu__btn" type="button">
                     <svg class="mobile-menu__btn-icon">
@@ -59,6 +60,7 @@
             <!-- Button Open Modal Window -->
                 <button class="modal-window_open-btn" type="button">Buy now</button>
         <!-- Mobile Menu-->
+        </div>
         <div class="mobile-menu">
             <button class="modal-window_open-btn" type="button">Buy now</button>
             <ul class="nav__list">
@@ -83,23 +85,23 @@
     <!-- Hero -->
     <div class="hero">
         <div class="page-title">
-            <div class="page-title__header">
-            <img src="../images/hero-header/page-title.png"
-            srcset="../images/hero-header/page-title@2x.png 2x"
-            alt="page-title-logo-ice-cream-passion"/>
-            </div>
+            <h1 class="page-title__header">Ice cream made with <span class="page-title__header--passion">passion</span></h1> 
             <div class="page-title__buttons">
                 <button class="page-title__buttons--products">Products</button>
-                <button class="page-title__buttons--products">How it's made?</button>
+                <button class="page-title__buttons--how-its-made">How it's made?</button>
             </div>
         </div>
-        <div class="hero__paragraph">
-            <img src="../images/hero-header/milk.png"
+        <div class="hero-description">
+            <div>
+                <img class="hero-description__icon" src="../images/hero-header/milk.png"
                 srcset="../images/hero-header/milk@2x.png 2x"
                 alt="spill-jug-of-milk"/>
-            <div>   
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, voluptates.</p>
-                <button>arrow-right</button>
+            </div>
+            <div class="hero-description__box">   
+                <p class="hero-description__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, voluptates.</p>
+                <img class="hero-description__right-arrow"
+                        src="../images/hero-header/arrow-right.png"
+                        alr="right-arrow"/>
             </div> 
         </div>
         <div class="main-theme">
@@ -109,23 +111,25 @@
             srcset="../images/hero-header/main-ice-cream@2x.png 2x"
             alt="main=picture-ice-cream"/>
         </div>
-        <div class="hero__container--rigth-side">
+        <div class="hero-right-side">
             <div>
-                <img src="..images/hero-header/small-white-ellipse.png"
+                <img class="hero-right-side__ellipse" src="../images/hero-header/small-white-ellipse.png"
                 alt="small-white-ellipse"/>
-                <p>16</p>
-                <p>cafes</p>
+                <div>
+                    <p class="hero-right-side__number">16</p>
+                    <p class="hero-right-side__subtitle">cafes</p>
+                </div>
+                    <img class="hero-right-side__ellipse" src="../images/hero-header/small-white-ellipse.png"
+                    alt="small-white-ellipse"/>
+                <div>
+                    <p class="hero-right-side__number">23</p>
+                    <p class="hero-right-side__subtitle">food trucks</p>
+                </div>
             </div>
-            <div>
-                <img src="..images/hero-header/small-white-ellipse.png"
-                alt="small-white-ellipse"/>
-                <p>23</p>
-                <p>food trucks</p>
-            </div>
-            <div>
-                <img src="../images/hero-header/so-tasty.png"
-                srcset="../images/hero-header/so-tasty@2x.png 2x"
-                alt="girl-eat-ice-cream-and-shouting-soooo-tasty"/>
-            </div>
+            <img class="hero-right-side__pic" src="../images/hero-header/so-tasty.png"
+            srcset="../images/hero-header/so-tasty@2x.png 2x"
+            alt="girl-eat-ice-cream-and-shouting-soooo-tasty"/>
+        </div>
+       
     </div>  
 
