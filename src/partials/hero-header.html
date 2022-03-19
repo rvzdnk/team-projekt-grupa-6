@@ -52,7 +52,7 @@
         </nav>
         <div class="menu-buttons">
             <!-- Button Open Mobile Menu -->
-                <button class="mobile-menu__btn" type="button">
+                <button class="mobile-menu__btn" type="button" mobile-menu--open>
                     <svg class="mobile-menu__btn-icon">
                         <use href="../images/svg-sprite.svg#icon-burger"></use>
                     </svg>
@@ -61,7 +61,7 @@
                 <button class="modal-window_open-btn" type="button">Buy now</button>
         <!-- Mobile Menu-->
         </div>
-        <div class="mobile-menu">
+        <div class="mobile-menu mobile-menu--is-hidden" mobile-menu>
             <button class="modal-window_open-btn" type="button">Buy now</button>
             <ul class="nav__list">
                 <li>
@@ -82,6 +82,7 @@
             </ul>
         </div>
     </header>
+    <body>
     <!-- Hero -->
     <div class="hero">
         <div class="page-title">
@@ -130,6 +131,7 @@
             srcset="../images/hero-header/so-tasty@2x.png 2x"
             alt="girl-eat-ice-cream-and-shouting-soooo-tasty"/>
         </div>
-       
     </div>  
-
+    <script src="../mobile-menu.js"></script>
+</body>
+</html>
