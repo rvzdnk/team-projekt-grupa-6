@@ -1,4 +1,4 @@
-.modal-window_open-btn{
+.modal-window__open-btn{
     display:none;
     width: 159px;
     height: 44px;  
@@ -13,10 +13,17 @@
     text-align: center;
     color: #D41443;
     justify-content: center;
+    align-items: center;
+}
+
+.modal-window__icon{
+    width: 5.26px;
+    height: 8px;
+    margin-left: 15.77px;
 }
 
 @media screen and (min-width:768px){
-.modal-window_open-btn{ 
+.modal-window__open-btn{ 
     display:flex;
     align-items: center;
     justify-content: center;
