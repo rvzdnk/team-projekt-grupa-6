@@ -9,7 +9,6 @@
     padding-right: 20px; 
     padding-top: 6px;
     padding-bottom: 6px;
-    height: auto;
 }
 
 @media screen and (min-width: 768px){
@@ -17,14 +16,15 @@
     padding-left: 34px;
     padding-top: 37px;
     padding-right: 34px;
-    padding-bottom: 37px;
+    padding-bottom: 0;
     }
-
-.mobile-buttons{
+.menu-buttons{
     display: flex;
-    justify-content: space-between;
-} 
 }
+
+}
+
+
 
 @media screen and (min-width: 1200px){
 .main-header{

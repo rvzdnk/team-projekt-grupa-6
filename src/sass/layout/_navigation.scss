@@ -20,6 +20,8 @@
 .nav__list {
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 150;
     }
 
 .nav__item:not(:last-child){
