@@ -62,16 +62,64 @@
 .about__item-first-description {
   max-width: 220px;
   margin-top: 46px;
-
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 162%;
-
   color: #000000;
+}
 
-  padding-bottom: 38px;
+.about__item-second-description {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  color: #907e82;
+
+  max-width: 220px;
+  margin-top: 47px;
+  margin-bottom: 47px;
+}
+
+.about__modal-window--open-btn {
+  width: 176px;
+  height: 44px;
+  background: #ffffff;
+  border-radius: 22px;
+  border: none;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #d41443;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 50px;
+  margin-right: 94px;
+}
+
+.about__modal-window--icon {
+  width: 4.43px;
+  height: 8px;
+  margin-left: 13.62px;
+}
+
+.about__menu-buttons {
+  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .about__modal-window--open-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+  }
 }
 
 @media screen and (min-width: 480px) {
