@@ -1,18 +1,23 @@
 .cnts {
       display: flex;
       flex-direction: column;
+      background-color: #fff5f6
+	}
 
   &__background {
       margin: 0 auto;
       padding: 43px 20px;
       width: 220px;
-      font-family: $font-family-primary;
-      font-size: $font-size-primary-mobile;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 12px;
       font-weight: 500;
-      background:  $white;
+      background:  #ffffff;
       background-color: #FFF5F6
       box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
       border-radius: 24px;
+			&--first {
+      		margin-top: -84px;
+			}
   }
 
   &__background:not(:last-child) {
@@ -20,11 +25,11 @@
   }
 
   &__wrapper {
-    display: flex;
-    margin: 4158px;
-    position: absolute;
-    max-width: 1280px;
-    height: 1022px;
+			display: flex;
+			margin: 4158px;
+			position: absolute;
+			max-width: 1280px;
+			height: 1022px;
   }
 
   &__category {
@@ -35,35 +40,35 @@
       align-items: center;
       line-height: 186%;
       letter-spacing: 0.04em;
-      color: $white;
+      color: #ffffff;
       border-radius: 4px;
 
     &--cafe {
         width: 80px;
-        background: $vanilla;
+        background: #f0d1a5;
     }
     &--foodtruck {
         width: 130px;
-        background: $lightGreen;
+        background: #c2e297;
     }
   }
 
   &__place {
       margin: 25px 0;
       padding-bottom: 25px;
-      border-bottom: 1px solid $color-customer-quotes;
+      border-bottom: 1px solid #e1e1e1;
   }
 
   &__location {
       margin-bottom: 10px;
-      color: $color-black;
+      color: #000000;
       line-height: 186%;
       letter-spacing: 0.04em;
   }
 
   &__description {
       line-height: 18px;
-      color: $color-secondary-text;
+      color: #907e82;
   }
 
   &__opening {
@@ -72,12 +77,12 @@
   
   &__opening-days {
       line-height: 186%;
-      color: $color-black;
+      color: #000000;
   }
 
   &__opening-hours {
       line-height: 186%;
-      color: $color-primary-text-light;
+      color: #ffa5ba;
   }
 
   &__hours:not(:last-child) {
@@ -86,19 +91,21 @@
 
   &__digits {
       padding-top: 25px;
-      border-top: 1px solid $color-customer-quotes;
+      border-top: 1px solid #e1e1e1;
   }
 
   &__phone,
   &__email {
       text-decoration: none;
       line-height: 18px;
-      color: $color-secondary-text;
+      color: #907e82;
   }
 
   &__slider {
       display: flex;
       flex-direction: column;
+      margin-top: 54px;
+      margin-bottom: 113px;
       gap: 10px;
   }
 
@@ -112,15 +119,15 @@
       display: flex;
       align-items: center;
       text-align: center;
-      color: $darkRed;
-      background: $white;
+      color: #d41443;
+      background: #ffffff;
       border-radius: 22px;
       border: none;
       
       &:hover,
       &:focus {
-        color: $white;
-        background: $color-bg-btn-location;
+        color: #ffffff;
+        background: #d41342;
         outline: none;
         cursor: pointer;
     }
