@@ -304,7 +304,7 @@ img {
 }
 
 .products__item::before {
-  content: url(../images/products/products-ice_cream.png);
+  content: url(./src/images/products/products-ice_cream.png);
   display: block;
   width: 249px;
   height: 252px;
@@ -315,11 +315,11 @@ img {
 }
 
 .products__item:nth-child(2)::before {
-  content: url(../images/products/products-ice_coffee.png);
+  content: url(./src/images/products/products-ice_coffee.png);
 }
 
 .products__item:nth-child(3)::before {
-  content: url(../images/products/products-milkshake.png);
+  content: url(./src/images/products/products-milkshake.png);
 }
 
 .products__item-title {
@@ -335,7 +335,7 @@ img {
 }
 
 .products__item-title::after {
-  content: url(../images/products/products-ellipses.svg);
+  content: url(./src/images/products/products-ellipses.svg);
   display: block;
   padding-top: 13px;
   width: 26px;
@@ -361,7 +361,7 @@ img {
   height: 40px;
   border-radius: 50%;
   border: none;
-  background-image: url(../images/products/products-btn.svg);
+  background-image: url(./src/images/products/products-btn.svg);
   margin-bottom: 41px;
 }
 
@@ -405,17 +405,17 @@ img {
     margin-bottom: 0;
   }
   .products__item::before {
-    content: url(../images/products/products-ice_cream-tablet.png);
+    content: url(./src/images/products/products-ice_cream-tablet.png);
     width: 220px;
     height: 226px;
     top: -104px;
     left: auto;
   }
   .products__item:nth-child(2)::before {
-    content: url(../images/products/products-ice_coffee-tablet.png);
+    content: url(./src/images/products/products-ice_coffee-tablet.png);
   }
   .products__item:nth-child(3)::before {
-    content: url(../images/products/products-milkshake-tablet.png);
+    content: url(./src/images/products/products-milkshake-tablet.png);
   }
   .products__item-title {
     padding-top: 152px;
@@ -455,16 +455,16 @@ img {
     margin-right: 27px;
   }
   .products__item::before {
-    content: url(../images/products/products-ice_cream-desktop.png);
+    content: url(./src/images/products/products-ice_cream-desktop.png);
     width: 335px;
     height: 335px;
     top: -208px;
   }
   .products__item:nth-child(2)::before {
-    content: url(../images/products/products-ice_coffee-desktop.png);
+    content: url(./src/images/products/products-ice_coffee-desktop.png);
   }
   .products__item:nth-child(3)::before {
-    content: url(../images/products/products-milkshake-desktop.png);
+    content: url(./src/images/products/products-milkshake-desktop.png);
   }
   .products__item-title {
     font-size: 30px;

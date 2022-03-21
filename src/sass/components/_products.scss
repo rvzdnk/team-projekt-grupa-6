@@ -48,7 +48,7 @@
   }
 
   &::before {
-    content: url(../images/products/products-ice_cream.png);
+    content: url(./src/images/products/products-ice_cream.png);
     display: block;
     width: 249px;
     height: 252px;
@@ -59,10 +59,10 @@
   }
 
   &:nth-child(2)::before {
-    content: url(../images/products/products-ice_coffee.png);
+    content: url(./src/images/products/products-ice_coffee.png);
   }
   &:nth-child(3)::before {
-    content: url(../images/products/products-milkshake.png);
+    content: url(./src/images/products/products-milkshake.png);
   }
 }
 
@@ -78,7 +78,7 @@
   padding-top: 161px;
 
   &::after {
-    content: url(../images/products/products-ellipses.svg);
+    content: url(./src/images/products/products-ellipses.svg);
     display: block;
     padding-top: 13px;
     width: 26px;
@@ -103,7 +103,7 @@
   height: 40px;
   border-radius: 50%;
   border: none;
-  background-image: url(../images/products/products-btn.svg);
+  background-image: url(./src/images/products/products-btn.svg);
   margin-bottom: 41px;
 }
 @media screen and (min-width: 480px) {
@@ -143,7 +143,7 @@
     }
 
     &::before {
-      content: url(../images/products/products-ice_cream-tablet.png);
+      content: url(./src/images/products/products-ice_cream-tablet.png);
       width: 220px;
       height: 226px;
       top: -104px;
@@ -151,10 +151,10 @@
     }
 
     &:nth-child(2)::before {
-      content: url(../images/products/products-ice_coffee-tablet.png);
+      content: url(./src/images/products/products-ice_coffee-tablet.png);
     }
     &:nth-child(3)::before {
-      content: url(../images/products/products-milkshake-tablet.png);
+      content: url(./src/images/products/products-milkshake-tablet.png);
     }
   }
   .products__item-title {
@@ -195,17 +195,17 @@
     }
 
     &::before {
-      content: url(../images/products/products-ice_cream-desktop.png);
+      content: url(./src/images/products/products-ice_cream-desktop.png);
       width: 335px;
       height: 335px;
       top: -208px;
     }
 
     &:nth-child(2)::before {
-      content: url(../images/products/products-ice_coffee-desktop.png);
+      content: url(./src/images/products/products-ice_coffee-desktop.png);
     }
     &:nth-child(3)::before {
-      content: url(../images/products/products-milkshake-desktop.png);
+      content: url(./src/images/products/products-milkshake-desktop.png);
     }
   }
   .products__item-title {
