@@ -91,6 +91,7 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   z-index: 999;
+  display: flex;
 }
 
 .mobile-menu--is-hidden {
