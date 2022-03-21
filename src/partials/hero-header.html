@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- <!DOCTYPE html>
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,19 +10,24 @@
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../sass/main.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../sass/main.css" />
+    <body></body>
   </head>
-  <body>
+   -->
 <!-- Header -->
-<header class="hero-header">   
+<header class="main-header">   
         <!-- Logo -->
-    <div class="main-header">
-        <div><img class="logo" 
-            src="../images/hero-header/logo.png"
-            srcset="../images/hero-header/logo@2x.png 2x"
+        <div class="logo">
+            <img
+            src="./images/hero-header/logo.png"
+            srcset="./images/hero-header/logo@2x.png 2x"
             alt="logo-icecream"/>
         </div>
         <!-- Navigation -->
@@ -47,16 +52,20 @@
         </nav>
         <div class="menu-buttons">
             <!-- Button Open Mobile Menu -->
-            <button class="mobile-menu__btn" type="button">
-                <svg class="mobile-menu__btn-icon">
-                    <use href="../images/svg-sprite.svg#icon-burger"></use>
-                </svg>
-            </button>
+                <button class="mobile-menu__btn" type="button" mobile-menu--open>
+                    <svg class="mobile-menu__btn-icon">
+                        <use href="./images/icons.svg#icon-burger"></use>
+                    </svg>
+                </button>
             <!-- Button Open Modal Window -->
-            <button class="modal-window_open-btn" type="button">Buy now</button>
-        </div>
+                <button class="modal-window__open-btn" type="button">Buy now  
+                    <svg class="modal-window__icon">
+                        <use href="./images/icons.svg#icon-buy-now"></use>
+                    </svg>
+                </button>
         <!-- Mobile Menu-->
-        <div class="mobile-menu">
+        </div>
+        <div class="mobile-menu mobile-menu--is-hidden" mobile-menu>
             <button class="modal-window_open-btn" type="button">Buy now</button>
             <ul class="nav__list">
                 <li>
@@ -76,49 +85,56 @@
                 </li>
             </ul>
         </div>
-    </div>
+    </header>
+    <body>
     <!-- Hero -->
     <div class="hero">
-        <div>
-            <img src="../images/hero-header/page-title.png"
-            srcset="../images/hero-header/page-title@2x.png 2x"
-            alt="page-title-logo-ice-cream-passion"/>
-            <button>Products</button>
-            <button>How it's made?</button>
+        <div class="page-title">
+            <h1 class="page-title__header">Ice cream made with <span class="page-title__header--passion">passion</span></h1> 
+            <div class="page-title__buttons">
+                <button class="page-title__buttons--products">Products</button>
+                <button class="page-title__buttons--how-its-made">How it's made?</button>
+            </div>
         </div>
-        <div>
-            <img src="../images/hero-header/milk.png"
-                srcset="../images/hero-header/milk@2x.png 2x"
+        <div class="hero-description">
+            <div>
+                <img class="hero-description__icon" src="./images/hero-header/milk.png"
+                srcset="./images/hero-header/milk@2x.png 2x"
                 alt="spill-jug-of-milk"/>
-            <div>   
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, voluptates.</p>
-                <button>arrow-right</button>
+            </div>
+            <div class="hero-description__box">   
+                <p class="hero-description__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, voluptates.</p>
+                <img class="hero-description__right-arrow"
+                        src="./images/hero-header/arrow-right.png"
+                        alr="right-arrow"/>
             </div> 
         </div>
-        <div>
-            <img src="../images/hero-header/big-pink-ellipse.png"
+        <div class="main-theme">
+            <img class="main-theme__bg-pic" src="./images/hero-header/big-pink-ellipse.png"
             alt="big-pink-ellipse"/>
-            <img src="../images/hero-header/main-ice-cream.png"
-            srcset="../images/hero-header/main-ice-cream@2x.png 2x"
+            <img class="main-theme__main-pic" src="./images/hero-header/main-ice-cream.png"
+            srcset="./images/hero-header/main-ice-cream@2x.png 2x"
             alt="main=picture-ice-cream"/>
         </div>
-        <div>
+        <div class="hero-right-side">
             <div>
-                <img src="..images/hero-header/small-white-ellipse.png"
+                <img class="hero-right-side__ellipse" src="./images/hero-header/small-white-ellipse.png"
                 alt="small-white-ellipse"/>
-                <p>16</p>
-                <p>cafes</p>
+                <div>
+                    <p class="hero-right-side__number">16</p>
+                    <p class="hero-right-side__subtitle">cafes</p>
+                </div>
+                    <img class="hero-right-side__ellipse" src="./images/hero-header/small-white-ellipse.png"
+                    alt="small-white-ellipse"/>
+                <div>
+                    <p class="hero-right-side__number">23</p>
+                    <p class="hero-right-side__subtitle">food trucks</p>
+                </div>
             </div>
-            <div>
-                <img src="..images/hero-header/small-white-ellipse.png"
-                alt="small-white-ellipse"/>
-                <p>23</p>
-                <p>food trucks</p>
-            </div>
-            <div>
-                <img src="../images/hero-header/so-tasty.png"
-                srcset="../images/hero-header/so-tasty@2x.png 2x"
-                alt="girl-eat-ice-cream-and-shouting-soooo-tasty"/>
-            </div>
+            <img class="hero-right-side__pic" src="./images/hero-header/so-tasty.png"
+            srcset="./images/hero-header/so-tasty@2x.png 2x"
+            alt="girl-eat-ice-cream-and-shouting-soooo-tasty"/>
+        </div>
     </div>  
-</header>
+    
+

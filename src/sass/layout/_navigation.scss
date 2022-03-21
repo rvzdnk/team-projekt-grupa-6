@@ -9,7 +9,7 @@
     font-size: 16px;
     line-height: 21px;
     display: flex;
-    align-items: center;
+    
     color: #FFFFFF; 
     & :active{
         color: #D41443;  
@@ -19,7 +19,9 @@
 @media screen and (min-width: 1200px){
 .nav__list {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 150;
     }
 
 .nav__item:not(:last-child){
