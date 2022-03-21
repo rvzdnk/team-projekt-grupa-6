@@ -1,0 +1,138 @@
+.cnts {
+      display: flex;
+      flex-direction: column;
+
+  &__background {
+      margin: 0 auto;
+      padding: 43px 20px;
+      width: 220px;
+      font-family: $font-family-primary;
+      font-size: $font-size-primary-mobile;
+      font-weight: 500;
+      background:  $white;
+      background-color: #FFF5F6;
+      box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+      border-radius: 24px;
+  }
+
+  &__background:not(:last-child) {
+      margin-bottom: 20px;
+  }
+
+  &__wrapper {
+    display: flex;
+    margin: 4158px;
+    position: absolute;
+    max-width: 1280px;
+    height: 1022px;
+  }
+
+  &__category {
+      height: 16px;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      line-height: 186%;
+      letter-spacing: 0.04em;
+      color: $white;
+      border-radius: 4px;
+
+    &--cafe {
+        width: 80px;
+        background: $vanilla;
+    }
+    &--foodtruck {
+        width: 130px;
+        background: $lightGreen;
+    }
+  }
+
+  &__place {
+      margin: 25px 0;
+      padding-bottom: 25px;
+      border-bottom: 1px solid $color-customer-quotes;
+  }
+
+  &__location {
+      margin-bottom: 10px;
+      color: $color-black;
+      line-height: 186%;
+      letter-spacing: 0.04em;
+  }
+
+  &__description {
+      line-height: 18px;
+      color: $color-secondary-text;
+  }
+
+  &__opening {
+      margin: 25px 0;
+  }
+  
+  &__opening-days {
+      line-height: 186%;
+      color: $color-black;
+  }
+
+  &__opening-hours {
+      line-height: 186%;
+      color: $color-primary-text-light;
+  }
+
+  &__hours:not(:last-child) {
+      margin-bottom: 10px;
+  }
+
+  &__digits {
+      padding-top: 25px;
+      border-top: 1px solid $color-customer-quotes;
+  }
+
+  &__phone,
+  &__email {
+      text-decoration: none;
+      line-height: 18px;
+      color: $color-secondary-text;
+  }
+
+  &__slider {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  &__button {
+      margin: 0 auto;
+      width: 161.45px;
+      height: 44px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 21px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: $darkRed;
+      background: $white;
+      border-radius: 22px;
+      border: none;
+      
+      &:hover,
+      &:focus {
+        color: $white;
+        background: $color-bg-btn-location;
+        outline: none;
+        cursor: pointer;
+    }
+  }
+
+  &__button-icon {
+      width: 3.61px;
+      height: 8px;
+  }
+
+  &__slider-arrow {
+      width: 3.61px;
+      height: 8px;
+  }
+}

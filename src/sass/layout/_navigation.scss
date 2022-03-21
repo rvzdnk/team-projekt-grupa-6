@@ -1,0 +1,30 @@
+.nav__list{
+    display: none
+}
+
+.nav__link{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    
+    color: #FFFFFF; 
+    & :active{
+        color: #D41443;  
+    }  
+}
+
+@media screen and (min-width: 1200px){
+.nav__list {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 150;
+    }
+
+.nav__item:not(:last-child){
+padding-right:35px;
+}
+}
