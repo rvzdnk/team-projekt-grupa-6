@@ -859,6 +859,12 @@ img {
     margin-top: 15px;
     margin-bottom: 55px;
   }
+  .about__list-box {
+    margin-right: 36px;
+    margin-left: 17px;
+    position: relative;
+    top: -2660px;
+  }
   .about__list {
     padding: 0;
     max-height: 269px;
@@ -975,6 +981,11 @@ img {
     left: 305px;
     margin-right: 404px;
     margin-bottom: 146px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    top: -2023px;
   }
 }
 

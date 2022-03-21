@@ -562,6 +562,15 @@ display: flex;
     margin-bottom: 55px;
   }
 
+  .about__list-box {
+    margin-right: 36px;
+    margin-left: 17px;
+    position: relative;
+    top: -2660px;
+  
+  }
+
+
   .about__list {
     padding: 0;
     max-height: 269px;
@@ -679,6 +688,12 @@ display: flex;
     left: 305px;
     margin-right: 404px;
     margin-bottom: 146px;
+
+      display: flex;
+      position: relative;
+      top: -2023px;
+    
+
   }
 }
 }
