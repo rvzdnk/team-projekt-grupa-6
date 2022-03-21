@@ -1,5 +1,5 @@
-     <!-- head just to look during programming -->
-     <!-- <!DOCTYPE html>
+<!-- head just to look during programming -->
+<!-- <!DOCTYPE html>
      <html lang="pl">
        <head>
          <meta charset="UTF-8" />
@@ -23,86 +23,86 @@
        </head> 
 </html> -->
 <!-- end just to look head -->
-     
-     
-     <!-- gallery -->
-    <div class="container">
-      <picture class="gallery">
-        <source
-          srcset="./images/gallery/gallery_320.png 320w, ./images/gallery/gallery_320@2x.png 640w"
-          media="(max-width: 767px) 480px, 100vw"
-        />
-        <source
-          srcset="./images/gallery/gallery_768.png 768w, ./images/gallery/gallery_768@2x.png 1539w"
-          media="(min-width: 768px) 768px, 100vw"
-        />
-        <source
-          srcset="./images/gallery/gallery_1280.png 1280w, ./images/gallery/gallery_1280@2x.png 2560w"
-          media="(min-width: 1200px) 1200px, 100vw"
-        />
-        <img src="./images/gallery/gallery_320.png" alt="Our ice creams gallery" />
-      </picture>
-    </div>
-    <!-- Customers review -->
-    <div class="review container">
-        <div class="review-gallery">
-            <div class="review-gallery__opinion">
-                    <div class="review-gallery__reviewer">
-                        <img
-                        class="review-gallery__img"
-                        src="./images/reviewers/reviewer_1.jpg"
-                        alt="Emily"
-                        />
-                    </div>
-          <p class="review-gallery__p">
-            Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
-            hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
-          </p>
-          <div class="review-gallery__deco">
-              <span class="review-gallery__ellipse"></span>
-              <span class="review-gallery__ellipse"></span>
-              <span class="review-gallery__ellipse"></span>
-          </div>
-          <p> Emily, Los Angeles</p>
-            </div>
-            <div class="review-gallery__opinion">
-                <div class="review-gallery__reviewer">
-                    <img
-                    class="review-gallery__reviewer"
-                    src="./images/reviewers/reviewer_2.jpg"
-                    alt="Kate"
-                    />
-                </div>
-                <p class="review-gallery__p">Opinion number 2</p>
-                <div class="review-gallery__deco">
-                    <span class="review-gallery__ellipse"></span>
-                    <span class="review-gallery__ellipse"></span>
-                    <span class="review-gallery__ellipse"></span>
-                </div>
-                <p>Kate, Los Santos</p>
-            </div>
-            <div class="review-gallery__opinion">
-                <div class="review-gallery__reviewer">
-                    <img
-                    class="review-gallery__reviewer"
-                    src="./images/reviewers/reviewer_3.jpg"
-                    alt="Jessica"
-                     />
-                </div>
-            <p class="review-gallery__p">Opinion number 3</p>
-            <div class="review-gallery__deco">
-                <span class="review-gallery__ellipse"></span>
-                <span class="review-gallery__ellipse"></span>
-                <span class="review-gallery__ellipse"></span>
-            </div>
-            <p> Jessica, Cracow</p>
-            </div>          
-            <div class="review-gallery__display">
-            <div class="review-gallery__button--left" onclick="plusDivs(-1)">&#10094;</div>
-            <div class="review-gallery__button--right" onclick="plusDivs(1)">&#10095;</div>
-            <span class="review-gallery__indicator" onclick="currentDiv(1)"></span>
-            <span class="review-gallery__indicator" onclick="currentDiv(2)"></span>
-            <span class="review-gallery__indicator" onclick="currentDiv(3)"></span>
-            </div>
+
+<!-- gallery -->
+<div class="box">
+  <img
+    src="images/gallery/gallery_320.png"
+    alt="Our ice creams gallery"
+    srcset="
+      ./images/gallery/gallery_320.png      320w,
+      ./images/gallery/gallery_320@2x.png   640w,
+      ./images/gallery/gallery_768.png      768w,
+      ./images/gallery/gallery_768@2x.png  1536w,
+      ./images/gallery/gallery_1280.png    1280w,
+      ./images/gallery/gallery_1280@2x.png 2560w
+    "
+    sizes="100vw"
+  />
+</div>
+<!-- Customers review -->
+<div class="review">
+  <div class="review-gallery">
+    <div class="review-gallery__opinion">
+      <div class="review-gallery__reviewer">
+        <img class="review-gallery__img" src="images/reviewers/reviewer_1.jpg" alt="Emily" />
       </div>
-    
+      <div class="review-gallery__text-box">
+        <p class="review-gallery__p">
+          <svg width="54" height="40"><use href="images/icons.svg#mark"></use></svg>
+          Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit
+          nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+        </p>
+      </div>
+      <div class="review-gallery__deco">
+        <span class="review-gallery__ellipse"></span>
+        <span class="review-gallery__ellipse"></span>
+        <span class="review-gallery__ellipse"></span>
+      </div>
+      <p class="review-gallery___customer">Emily, Los Angeles</p>
+    </div>
+    <div class="review-gallery__opinion">
+      <div class="review-gallery__reviewer">
+        <img class="review-gallery__reviewer" src="images/reviewers/reviewer_2.jpg" alt="Kate" />
+      </div>
+      <p class="review-gallery__p">
+        <svg class="mark" width="54" height="40"><use href="images/icons.svg#mark"></use></svg>Opinion number 2
+      </p>
+      <div class="review-gallery__deco">
+        <span class="review-gallery__ellipse"></span>
+        <span class="review-gallery__ellipse"></span>
+        <span class="review-gallery__ellipse"></span>
+      </div>
+      <p>Kate, Los Santos</p>
+    </div>
+    <div class="review-gallery__opinion">
+      <div class="review-gallery__reviewer">
+        <img
+          class="review-gallery__reviewer"
+          src="images/reviewers/reviewer_3.jpg"
+          alt="Jessica"
+        />
+      </div>
+      <p class="review-gallery__p">
+        <svg width="54" height="40"><use href="images/icons.svg#mark"></use></svg>Opinion number 3
+      </p>
+      <div class="review-gallery__deco">
+        <span class="review-gallery__ellipse"></span>
+        <span class="review-gallery__ellipse"></span>
+        <span class="review-gallery__ellipse"></span>
+      </div>
+      <p>Jessica, Cracow</p>
+    </div>
+    <div class="review-gallery__display">
+      <button class="review-gallery__indicator" onclick="currentDiv(1)">
+        <svg width="12.8"><use href="images/icons.svg#home-opinion"></use></svg>
+      </button>
+      <button class="review-gallery__indicator" onclick="currentDiv(2)">
+        <svg width="12"><use href="images/icons.svg#ellipse"></use></svg>
+      </button>
+      <button class="review-gallery__indicator" onclick="currentDiv(3)">
+        <svg width="12"><use href="images/icons.svg#ellipse"></use></svg>
+      </button>
+    </div>
+  </div>
+</div>
