@@ -312,16 +312,16 @@ display: flex;
 @media screen and (min-width: 768px) {
  
 
-  .container {
-      max-width: 768px;
-      padding: 0;
-
-    }
+  
 
 .container.about {
     background-color: #fff5f6;
     width: 100vw;
     margin: 0 auto;
+
+    max-width: 768px;
+    padding: 0;
+
 
     max-width: 768px;
 
@@ -376,6 +376,15 @@ display: flex;
     margin-bottom: 50px;
   }
 
+  .about__list-box {
+    margin-right: 36px;
+    margin-left: 17px;
+    position: relative;
+    top: -1978px;
+  
+  }
+
+
   .about__list {
     padding: 0;
     max-height: 283px;
@@ -388,7 +397,7 @@ display: flex;
     justify-content: right;
     position: absolute;
     
-    top: 130px;
+    top: 1480px;
     left: 0px;
 
   }
@@ -475,6 +484,8 @@ display: flex;
   }
   .about__menu-buttons {
     display: flex;
+    position: relative;
+    top: 23px;
   }
 
 @media screen and (min-width: 1280px) {
@@ -563,9 +574,8 @@ display: flex;
     justify-content: right;
     position: absolute;
     
-    top: 130px;
+    top: 1939px;
     left: 0px;
-
   }
 
   .about__item {
@@ -650,6 +660,8 @@ display: flex;
     margin-right: 200px;
     margin-top: 92px;
     display: flex;
+    position: absolute;
+    top: 1790px;
   }
   .about__modal-window--icon {
     width: 4.43px;
