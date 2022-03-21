@@ -3,7 +3,7 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://Arkadiusz-Kruk.github.io/team-projekt-grupa-6",
+  "homepage": "https://rvzdnk.github.io/team-projekt-grupa-6",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /team-projekt-grupa-6/"
