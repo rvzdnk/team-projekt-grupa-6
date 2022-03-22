@@ -1,28 +1,16 @@
 <!-- about section -->
+
+<section class="about section">
+<div class="container">
 <!-- title -->
 
 <p class="about__description">TRADITION AND LOVE</p>
 <h2 class="about__title">HOW IT’S MADE?</h2>
 
 <!-- about image -->
+    <div class="about__img"></div>
+    <div class="about__backgrnd"></div>
 
-    <div class="container">
-        <picture class="about__image">
-            <source
-            srcset="./images/about/about280.png 320w, ./images/about/about280@2x.png 640w"
-            media="(max-width: 767px) 480px, 100vw"
-            />
-            <source
-            srcset="./images/about/about340.png 768w, ./images/about/about340@2x.png 1539w"
-            media="(min-width: 768px) 768px, 100vw"
-            />
-            <source
-            srcset="./images/about/about516.png 1280w, ./images/about/about516@2x.png 2560w"
-            media="(min-width: 1200px) 1200px, 100vw"
-            />
-            <img src="./images/about/about280.png" alt="picture-cow-and-milk" />
-        </picture>
-    </div>
 
 <!-- about info -->
 
@@ -36,15 +24,30 @@
     <li class="about__item">
         <p class="about__item-second-description">
             Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat.
-            Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
-            
-            Aliquam erat volutpat. Aenean accumsan.
+            Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,<br /> tincidunt.<br />
+            <br />
+            Aliquam erat volutpat. Aenean accumsan.<br />
+        </p>
+        <p class="about__item-second-description-hidden">
+            Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat.
+            Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna <br /> maximus. Cras massa nibh, tincidunt.<br />
+            <br />
+            Aliquam erat volutpat. Aenean accumsan.<br />
         </p>
     </li>
 </ul>
 
+
 <!-- about button -->
 
-<div class="about__button">
-    <button>Read more</button>
+    <div class="about__menu-buttons">
+        <button class="about__modal-window--open-btn" type="button">Read more
+            <svg class="about__modal-window--icon">
+                <use href="./images/icons.svg"></use>
+            </svg>
+        </button> 
+    </div>
+
+
 </div>
+</section>

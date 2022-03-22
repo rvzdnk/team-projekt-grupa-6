@@ -1,6 +1,8 @@
-@import "./base/common";
+@import './base/common';
 
 @import "./components/logo";
+@import './components/advantages';
+@import './components/about';
 @import "./components/mobile-menu";
 @import "./components/modal-window";
 @import "./components/gallery";
@@ -11,5 +13,6 @@
 @import "./layout/navigation";
 @import "./layout/hero";
 
-/*@import "./contacts";*/
+
+
 
