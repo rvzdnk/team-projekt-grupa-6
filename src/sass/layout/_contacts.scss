@@ -1,8 +1,8 @@
 .cnts {
       display: flex;
       flex-direction: column;
-      background-color: #fff5f6
-	}
+      background-color: #fff5f6;
+	
 
   &__background {
       margin: 0 auto;
@@ -30,7 +30,7 @@
 			position: absolute;
 			max-width: 1280px;
 			height: 1022px;
-  }
+    }
 
   &__category {
       height: 16px;
@@ -142,3 +142,4 @@
       width: 3.61px;
       height: 8px;
   }
+}
