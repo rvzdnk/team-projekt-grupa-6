@@ -1,4 +1,4 @@
-.f {
+.footer {
   background: #fff5f6;
   margin: 0 auto;
 
@@ -10,7 +10,7 @@
   &__main-title {
     text-transform: uppercase;
     width: 234px;
-    height: 135px;
+    
   }
   &__subtitle1 {
     padding-left: 22px;
@@ -80,7 +80,8 @@
     margin: 0 auto;
     padding-bottom: 25px;
     padding-top: 22px;
-    width: 140px;
+    display: flex;
+    flex-direction: column;
     font-family: 'DM Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
