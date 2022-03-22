@@ -1,52 +1,194 @@
 .review {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    max-width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  margin: 20px;
 }
 
 .review-gallery {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  width: calc(100vw - 40px);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  &__opinion {
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     width: 100%;
+  }
+  &__reviewer {
+    width: 100%;
+    display: flex;
     justify-content: center;
-    align-items: center;
-    &__opinion {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-    &__reviewer {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    &__p {
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        background-color: #FAFAFA;
-        border-bottom: 1px solid rgba(225, 225, 225, 1)}
-    &__p::before {
-            content: "\0022";
-            color:#E1E1E1;
-        }
-    &__deco {
-        max-width: 100%;
-        height: 14px;
-        white-space:normal;
-        justify-content: center;
-    }
-    &__ellipse {
-        box-sizing: border-box;
-        display: inline-block;
-        width: 4px;
-        height: 4px;
-        border-radius: 50%;
-        background-color: #C7133E;
-        margin: 10px;
-    }
+    margin: 15px auto;
+  }
+  &__p {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 31px;
+    letter-spacing: 0em;
+    background-image: repeating-linear-gradient(
+      #fafafa,
+      #fafafa 26px,
+      #e1e1e1 0,
+      #e1e1e1 27px,
+      #fafafa 0,
+      #fafafa 30px);
+  }
+  &__deco {
+    max-width: 100%;
+    height: 14px;
+    white-space: normal;
+    justify-content: center;
+  }
+  &__ellipse {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #c7133e;
+    margin: 10px;
+  }
+  &__customer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  &__indicator {
+      margin: 9px;
+      border: none;
+      background: none;
+  }
+  &__text-box {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      background-color: #fafafa;
+      padding: 20px 50px;
+  }
 }
 
+.mark {
+    position: absolute;
+    left: 61px;
+    top: 28px;
+    z-index: 2;
+    fill: rgba(0,0,0,0.1)
+}
+
+@media screen and (min-width: 768px) {
+    .review {
+        margin: 100px 74px;
+    }
+    .review-gallery {
+        width: 100%;
+        &__p {
+            font-size: 14px;
+        }
+        &__text-box {
+            padding: 30px 60px 20px 60px;
+        }
+    }
+}
+@media screen and (min-width: 1200px){
+  .review-gallery__text-box {
+      width: 926px;
+      margin: auto calc(calc(100vw - 926px) / 2);
+  }
+}
+
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: linear-gradient(
+    to bottom,
+    #FFF5F6,
+    #FFF5F6 50%,
+    #FFFFFF 50%
+  );
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  max-height:fit-content;
+  justify-content: center;
+  &__img{
+    width: 150px;
+    height: 150px;
+    border-radius: 16px;
+    margin: 5px;
+  }
+  &__img2{
+    width: 300px;
+    height: 300px;
+    border-radius: 16px;
+    margin: 10px;
+  }
+  &__img3 {
+    width: 300px;
+    height: 150px;
+    border-radius: 16px;
+    margin: 10px;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 320px;
+    max-height: max-content;
+  }
+  
+}
+
+@media screen and (min-width: 1200px){
+  .box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    max-width: max-content;
+    justify-content: center;
+    align-items: center;
+    &__img {
+      width: 140px;
+      height: 140px;
+      &2 {
+        width: 280px;
+        height: 280px;
+      }
+      &3 {
+        width: 280px;
+        height: 140px;
+      }
+    }
+    &--2 {
+      flex-direction: unset;
+      width: 300px;
+    }
+  }
+  
+}
