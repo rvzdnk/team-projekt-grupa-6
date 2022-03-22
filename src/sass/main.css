@@ -1920,6 +1920,10 @@ img {
   left: 117px;
   bottom: 157px;
   z-index: 200;
+  -webkit-transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
 }
 
 .main-theme__bg-pic {
@@ -1929,6 +1933,10 @@ img {
   left: 36px;
   top: 180px;
   z-index: 100;
+  -webkit-transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
 }
 
 .hero-description {
@@ -1997,6 +2005,10 @@ img {
   .hero-description__icon {
     width: 124px;
     height: 126px;
+    -webkit-transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
   }
   .hero-description__box {
     display: -webkit-box;
@@ -2022,6 +2034,10 @@ img {
   .hero-description__right-arrow {
     width: 18px;
     height: 18px;
+    -webkit-transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
   }
   .hero-right-side {
     display: -webkit-box;
@@ -2037,6 +2053,10 @@ img {
     right: 34px;
     top: 266px;
     z-index: 300;
+    -webkit-transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
   }
   .hero-right-side__number {
     position: relative;
@@ -2062,6 +2082,10 @@ img {
             transform: matrix(-1, 0, 0, 1, 0, 0);
     right: -24px;
     top: 15px;
+    -webkit-transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
   }
   .hero-right-side__subtitle {
     position: relative;
