@@ -185,6 +185,10 @@
         height: 140px;
       }
     }
+    &--2 {
+      flex-direction: unset;
+      width: 300px;
+    }
   }
   
 }
