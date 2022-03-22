@@ -62,11 +62,11 @@ img {
   height: 100vh;
 }
 
-.section.advantages {
+.section2.advantages {
   background-color: #fff5f6;
   width: 100vw;
   margin: 0 auto;
-  height: 100vh;
+  padding-bottom: 921px;
 }
 
 .advantages__description {
@@ -102,7 +102,8 @@ img {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  top: 0px;
+  top: 276px;
+  margin-bottom: 100px;
 }
 
 .advantages__list {
@@ -132,7 +133,6 @@ img {
 
 .advantages__item:nth-child(3) {
   background: #fff5f6;
-  padding-bottom: 145px;
 }
 
 .advantages__item:not(:last-child) {
@@ -179,7 +179,6 @@ img {
   font-size: 12px;
   line-height: 170%;
   color: #000000;
-  padding-bottom: 38px;
 }
 
 @media screen and (min-width: 480px) {
@@ -192,6 +191,12 @@ img {
   .container {
     max-width: 768px;
     padding: 0;
+  }
+  .section2.advantages {
+    background-color: #fff5f6;
+    width: 100vw;
+    margin: 0 auto;
+    padding-bottom: 660px;
   }
   .advantages__title-hidden {
     margin: 0;
@@ -226,6 +231,14 @@ img {
     margin-left: 36px;
     margin-right: 76px;
     margin-top: 66px;
+  }
+  .advantages__list-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    top: 130px;
+    left: 0px;
   }
   .advantages__item {
     max-width: 180px;
@@ -274,10 +287,15 @@ img {
 }
 
 @media screen and (min-width: 1280px) {
+  .section2.advantages {
+    background-color: #fff5f6;
+    width: 100vw;
+    margin: 0 auto;
+    padding-bottom: 778px;
+  }
   .container {
     max-width: 1280px;
     padding: 0;
-    height: 100vh;
   }
   .advantages__title-hidden {
     margin: 0;
@@ -297,7 +315,7 @@ img {
     display: -ms-flexbox;
     display: flex;
     position: relative;
-    top: 66px;
+    top: 55px;
     left: 0px;
   }
   .advantages__list {
@@ -362,14 +380,18 @@ img {
   margin: 0px;
 }
 
-.section.about {
+.section2 {
   background-color: #fff5f6;
+  width: 100vw;
+  margin: 0 auto;
+  height: 100vh;
 }
 
 .container.about {
   background-color: #fff5f6;
   width: 100vw;
   margin: 0 auto;
+  height: 100vh;
 }
 
 .about__img {
@@ -503,7 +525,7 @@ img {
     padding: 0;
     margin: 0px;
   }
-  .section.about {
+  .section2.about {
     background-color: #fff5f6;
   }
   .container.about {
