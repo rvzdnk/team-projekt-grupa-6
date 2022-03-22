@@ -7,14 +7,18 @@
 .about {
 }
 
-.section.about {
+.section2 {
 background-color: #fff5f6;
+  width: 100vw;
+  margin: 0 auto;
+  height: 100vh;
 }
 
 .container.about {
 background-color: #fff5f6;
 width: 100vw;
 margin: 0 auto;
+height: 100vh;
 }
 
 .about__img {
@@ -60,6 +64,13 @@ margin-right: 61px;
 margin-bottom: 26px;
 }
 
+.about__list-box {
+
+  margin-top: 46px;
+  position: relative;
+  top: -165px;
+  
+}
 
 .about__list {
 padding: 0;
@@ -130,7 +141,11 @@ margin-left: 13.62px;
 }
 
 .about__menu-buttons {
-display: flex;
+  display: flex;
+
+  position: relative;
+  top: -22px;
+  left:0px;
 }
 
 
@@ -142,7 +157,7 @@ display: flex;
       margin: 0px;
     }
 
-.section.about {
+.section2.about {
   background-color: #fff5f6;
 }
 
@@ -167,8 +182,12 @@ display: flex;
  
   margin-left: 0px;
   margin-right: 0px;
-  position: absolute;
-  top: 790px;
+
+  display: flex;
+  position: relative;
+  top: 192px;
+  left: 0px;
+  z-index: 2;
 }
 
 .about__description {
@@ -240,12 +259,14 @@ display: flex;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 162%;
+  line-height: 19px;
   color: #907e82;
-
   max-width: 220px;
   margin-top: 47px;
   margin-bottom: 47px;
+  z-index: 10;
+  position: relative;
+  top: -22px;
 }
 
 .about__item-second-description-hidden {
@@ -290,6 +311,8 @@ display: flex;
 
 .about__menu-buttons {
   display: flex;
+  position: relative;
+  top: -212px;
 }
 }
 
@@ -312,16 +335,16 @@ display: flex;
 @media screen and (min-width: 768px) {
  
 
-  .container {
-      max-width: 768px;
-      padding: 0;
-
-    }
+  
 
 .container.about {
     background-color: #fff5f6;
     width: 100vw;
     margin: 0 auto;
+
+    max-width: 768px;
+    padding: 0;
+
 
     max-width: 768px;
 
@@ -376,6 +399,14 @@ display: flex;
     margin-bottom: 50px;
   }
 
+  .about__list-box {
+    margin-right: 36px;
+    margin-left: 17px;
+    position: relative;
+    top: -1978px;
+  }
+
+
   .about__list {
     padding: 0;
     max-height: 283px;
@@ -388,7 +419,7 @@ display: flex;
     justify-content: right;
     position: absolute;
     
-    top: 130px;
+    top: 1480px;
     left: 0px;
 
   }
@@ -475,6 +506,8 @@ display: flex;
   }
   .about__menu-buttons {
     display: flex;
+    position: relative;
+    top: 23px;
   }
 
 @media screen and (min-width: 1280px) {
@@ -483,7 +516,6 @@ display: flex;
   .container {
     max-width: 1280px;
     padding: 0;
-    height: auto;
     margin: 0px;
   }
 
@@ -507,16 +539,19 @@ display: flex;
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
-    position: absolute;
-    top: 340px;
-    left: 0px;
+    
 
-    display: flex;
+   
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 2;
     opacity: 0.6;
+
+    display: flex;
+    position: relative;
+    top: -500px;
+    left: -2px;
   }
 
 
@@ -551,21 +586,28 @@ display: flex;
     margin-bottom: 55px;
   }
 
+  .about__list-box {
+    margin-right: 36px;
+    margin-left: 17px;
+    position: relative;
+    top: -2660px;
+  
+  }
+
+
   .about__list {
     padding: 0;
     max-height: 269px;
     margin-top: 106px;
     
     margin-left: 702px;
-    margin-right: 115px;
 
     display: block;
     justify-content: right;
-    position: absolute;
+    position: relative;
     
-    top: 130px;
-    left: 0px;
-
+    top: 1513px;
+    left: -22px;
   }
 
   .about__item {
@@ -650,6 +692,8 @@ display: flex;
     margin-right: 200px;
     margin-top: 92px;
     display: flex;
+    position: absolute;
+    top: 1790px;
   }
   .about__modal-window--icon {
     width: 4.43px;
@@ -662,11 +706,15 @@ display: flex;
     display: inline-block;
     
     justify-content: left;
-    position: absolute;
     top: 580px;
     left: 305px;
     margin-right: 404px;
     margin-bottom: 146px;
+
+    display: flex;
+    position: relative;
+    top: -2960px;
+    left:300px;
   }
 }
 }

@@ -4,8 +4,11 @@
   height: 100vh;
 }
 
-.section.advantages {
+.section2.advantages {
   background-color: #fff5f6;
+  width: 100vw;
+  margin: 0 auto;
+  padding-bottom: 921px;
 }
 .advantages__description {
   font-family: 'Titan One';
@@ -35,10 +38,16 @@
   padding-bottom: 140px;
 }
 
+.advantages__list-box {
+  display: flex;
+  position: relative;
+  top: 276px;
+  margin-bottom: 100px;
+}
+
 .advantages__list {
   padding: 0;
   margin-top: 55px;
-  margin-bottom: 145px;
 }
 
 .advantages__item {
@@ -57,7 +66,6 @@
   }
   &:nth-child(3) {
     background: #fff5f6;
-    padding-bottom: 145px;
   }
 
   &:not(:last-child) {
@@ -103,7 +111,6 @@
   font-size: 12px;
   line-height: 170%;
   color: #000000;
-  padding-bottom: 38px;
 }
 
 @media screen and (min-width: 480px) {
@@ -112,12 +119,17 @@
   }
 }
 @media screen and (min-width: 768px) {
-  .section.advantages {
-  }
 
   .container {
     max-width: 768px;
     padding: 0;
+  }
+
+  .section2.advantages {
+    background-color: #fff5f6;
+    width: 100vw;
+    margin: 0 auto;
+    padding-bottom: 660px;
   }
 
   .advantages__title-hidden {
@@ -153,8 +165,15 @@
     margin-left: 36px;
     margin-right: 76px;
     margin-top: 66px;
-    margin-bottom: 246px;
   }
+
+  .advantages__list-box {
+    display: flex;
+    position: relative;
+    top: 130px;
+    left:0px;
+  }
+
   .advantages__item {
     max-width: 180px;
     max-height: 226px;
@@ -206,13 +225,17 @@
   }
 }
 @media screen and (min-width: 1280px) {
-  .section.advantages {
+  
+  .section2.advantages {
+    background-color: #fff5f6;
+    width: 100vw;
+    margin: 0 auto;
+    padding-bottom: 778px;
   }
+ 
   .container {
     max-width: 1280px;
     padding: 0;
-
-    height: 100vh;
   }
   .advantages__title-hidden {
     margin: 0;
@@ -228,12 +251,19 @@
     color: #000000;
   }
 
+  .advantages__list-box {
+    display: flex;
+    position: relative;
+    top: 55px;
+    left:0px;
+    margin-bottom: 0px;
+  }
+
   .advantages__list {
     display: flex;
     margin-left: 115px;
     margin-right: 115px;
     margin-top: 112px;
-    margin-bottom: 310px;
   }
 
   .advantages__item-title {
