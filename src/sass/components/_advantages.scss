@@ -6,6 +6,9 @@
 
 .section.advantages {
   background-color: #fff5f6;
+  width: 100vw;
+  margin: 0 auto;
+  height: 100vh;
 }
 .advantages__description {
   font-family: 'Titan One';
@@ -35,10 +38,15 @@
   padding-bottom: 140px;
 }
 
+.advantages__list-box {
+  display: flex;
+  position: relative;
+  top: 0px;
+}
+
 .advantages__list {
   padding: 0;
   margin-top: 55px;
-  margin-bottom: 145px;
 }
 
 .advantages__item {
@@ -153,7 +161,6 @@
     margin-left: 36px;
     margin-right: 76px;
     margin-top: 66px;
-    margin-bottom: 246px;
   }
   .advantages__item {
     max-width: 180px;
@@ -228,12 +235,18 @@
     color: #000000;
   }
 
+  .advantages__list-box {
+    display: flex;
+    position: relative;
+    top: 66px;
+    left:0px;
+  }
+
   .advantages__list {
     display: flex;
     margin-left: 115px;
     margin-right: 115px;
     margin-top: 112px;
-    margin-bottom: 310px;
   }
 
   .advantages__item-title {
