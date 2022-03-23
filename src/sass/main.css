@@ -495,7 +495,7 @@ img {
   }
 }
 
-.container {
+.container-products {
   width: 100%;
   margin: 0 auto;
 }
@@ -732,7 +732,7 @@ img {
   }
 }
 
-.container.advantages {
+.container-.advantages.advantages {
   width: 100vw;
   margin: 0 auto;
   height: 100vh;
@@ -858,13 +858,13 @@ img {
 }
 
 @media screen and (min-width: 480px) {
-  .container {
+  .container-advantages {
     max-width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .container {
+  .container-advantages {
     max-width: 768px;
     padding: 0;
   }
@@ -969,7 +969,7 @@ img {
     margin: 0 auto;
     padding-bottom: 778px;
   }
-  .container {
+  .container-advantages {
     max-width: 1280px;
     padding: 0;
   }
@@ -1051,7 +1051,7 @@ img {
   }
 }
 
-.container {
+.container-about {
   max-width: 320px;
   padding: 0;
   margin: 0px;
@@ -1064,7 +1064,7 @@ img {
   height: 100vh;
 }
 
-.container.about {
+.container-about.about {
   background-color: #fff5f6;
   width: 100vw;
   margin: 0 auto;
@@ -1197,7 +1197,7 @@ img {
 }
 
 @media screen and (min-width: 320px) {
-  .container {
+  .container-about {
     max-width: 320px;
     padding: 0;
     margin: 0px;
@@ -1205,7 +1205,7 @@ img {
   .section2.about {
     background-color: #fff5f6;
   }
-  .container.about {
+  .container-about.about {
     background-color: #fff5f6;
     width: 100vw;
     margin: 0 auto;
@@ -1367,13 +1367,13 @@ img {
 }
 
 @media screen and (min-width: 480px) {
-  .container {
+  .container-about {
     max-width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .container.about {
+  .container-about.about {
     background-color: #fff5f6;
     width: 100vw;
     margin: 0 auto;
@@ -1533,7 +1533,7 @@ img {
 }
 
 @media screen and (min-width: 768px) and (min-width: 1280px) {
-  .container {
+  .container-about {
     max-width: 1280px;
     padding: 0;
     margin: 0px;

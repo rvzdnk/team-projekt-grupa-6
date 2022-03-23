@@ -1,4 +1,4 @@
-.container.advantages {
+.container-.advantages.advantages {
   width: 100vw;
   margin: 0 auto;
   height: 100vh;
@@ -114,13 +114,13 @@
 }
 
 @media screen and (min-width: 480px) {
-  .container {
+  .container-advantages {
     max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
 
-  .container {
+  .container-advantages {
     max-width: 768px;
     padding: 0;
   }
@@ -233,7 +233,7 @@
     padding-bottom: 778px;
   }
  
-  .container {
+  .container-advantages {
     max-width: 1280px;
     padding: 0;
   }

@@ -1,4 +1,4 @@
-.container {
+.container-about {
   max-width: 320px;
   padding: 0;
   margin: 0px;
@@ -11,7 +11,7 @@ background-color: #fff5f6;
   height: 100vh;
 }
 
-.container.about {
+.container-about.about {
 background-color: #fff5f6;
 width: 100vw;
 margin: 0 auto;
@@ -148,7 +148,7 @@ margin-left: 13.62px;
 
 @media screen and (min-width: 320px) {
  
-  .container {
+  .container-about {
       max-width: 320px;
       padding: 0;
       margin: 0px;
@@ -158,7 +158,7 @@ margin-left: 13.62px;
   background-color: #fff5f6;
 }
 
-.container.about {
+.container-about.about {
   background-color: #fff5f6;
   width: 100vw;
   margin: 0 auto;
@@ -325,7 +325,7 @@ margin-left: 13.62px;
 }
 
 @media screen and (min-width: 480px) {
-  .container {
+  .container-about {
     max-width: 480px;
   }
 }
@@ -334,7 +334,7 @@ margin-left: 13.62px;
 
   
 
-.container.about {
+.container-about.about {
     background-color: #fff5f6;
     width: 100vw;
     margin: 0 auto;
@@ -510,7 +510,7 @@ margin-left: 13.62px;
 @media screen and (min-width: 1280px) {
  
 
-  .container {
+  .container-about {
     max-width: 1280px;
     padding: 0;
     margin: 0px;
