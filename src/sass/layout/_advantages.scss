@@ -204,6 +204,7 @@
     width: 100vw;
     margin: 0 auto;
     padding-bottom: 140px;
+    justify-content: center;
   }
  
   .container-advantages {
@@ -228,15 +229,14 @@
     display: flex;
     width: 100%;
     margin-bottom: 0px;
+    justify-content: left;
   }
 
   .advantages__list {
     display: flex;
     width: 100%;
     flex-direction: row;
-    justify-content: space-around;
-    margin-left: 115px;
-    margin-right: 115px;
+    justify-content: left;
   }
 
   .advantages__item-title {
