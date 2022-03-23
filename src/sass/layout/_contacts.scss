@@ -2,7 +2,8 @@
 
   &__wrapper {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    flex-direction: column;
     justify-content: center;
     background-image: linear-gradient( 
       #ffffff 8%,
@@ -122,6 +123,7 @@
       border-radius: 22px;
       border: none;
       cursor: pointer;
+      margin: 0;
   }
 
   &__button-left {
