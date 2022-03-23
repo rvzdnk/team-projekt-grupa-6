@@ -732,16 +732,9 @@ img {
   }
 }
 
-.container-.advantages.advantages {
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-
 .section2.advantages {
   background-color: #fff5f6;
   margin: 0 auto;
-
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -752,20 +745,6 @@ img {
   height: -moz-max-content;
   height: max-content;
   padding-top: 150px;
-
-  margin-bottom: -200px;
-}
-
-.advantages__description {
-  font-family: 'Titan One';
-  font-size: 18px;
-  line-height: 1.167;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffa5ba;
-  margin: 0;
-  margin-bottom: 15px;
-
 }
 
 .advantages__title-hidden {
@@ -801,25 +780,17 @@ img {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-
 }
 
 .advantages__item {
   background: #fff5f6;
   text-align: left;
-
-
-  position: relative;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-
+          justify-content: center;
   -webkit-box-align: initial;
       -ms-flex-align: initial;
           align-items: initial;
@@ -877,7 +848,6 @@ img {
 
 @media screen and (min-width: 768px) {
   .container-advantages {
-
     max-width: 768px;
     padding: 0 0 136px 0;
     height: -webkit-max-content;
@@ -886,9 +856,6 @@ img {
     -webkit-box-pack: left;
         -ms-flex-pack: left;
             justify-content: left;
-
-    max-width: 100%;
-
   }
   .section2.advantages {
     background-color: #fff5f6;
@@ -1267,7 +1234,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .about__item-first-description {
     font-size: 16px;
   }
@@ -1375,6 +1342,7 @@ img {
   padding-left: 20px;
   padding-right: 20px;
   height: 440px;
+  overflow: hidden;
 }
 
 .page-title {
@@ -1492,7 +1460,7 @@ img {
 
 .main-theme__bg-pic {
   position: relative;
-  width: calc(100% - 16px);
+  width: 346px;
   height: 344px;
   left: 36px;
   top: 180px;
@@ -1513,12 +1481,6 @@ img {
 
 .hero-right-side {
   display: none;
-}
-
-@media screen and (min-width: 406px) {
-  .main-theme__bg-pic {
-    width: 100%;
-  }
 }
 
 @media screen and (min-width: 768px) {

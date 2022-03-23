@@ -7,6 +7,7 @@
     padding-left: 20px;
     padding-right: 20px; 
     height: 440px;
+    overflow: hidden;
 }
 
 .page-title{
@@ -101,7 +102,7 @@
 
 .main-theme__bg-pic{
     position: relative;
-    width: calc(100% - 16px);
+    width: 346px;
     height: 344px;
     left: 36px;
     top: 180px;
@@ -120,10 +121,6 @@
    display: none; 
 }
 
-@media screen and (min-width: 406px){
-.main-theme__bg-pic{
-    width: 100%;}
-}
 
 @media screen and (min-width: 768px){
 .hero{
