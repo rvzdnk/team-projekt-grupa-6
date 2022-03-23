@@ -1,12 +1,12 @@
 
 <!-- Header -->
-<header class="main-header">   
+<header class="main-header">  
         <!-- Logo -->
-        <div class="logo">
+        <div class="logo"><a id="home"> 
             <img
             src="./images/hero-header/logo.png"
             srcset="./images/hero-header/logo@2x.png 2x"
-            alt="logo-icecream"/>
+            alt="logo-icecream"/></a>
         </div>
         <!-- Navigation -->
         <nav class="nav__menu">
@@ -44,22 +44,27 @@
         <!-- Mobile Menu-->
         </div>
         <div class="mobile-menu mobile-menu--is-hidden" mobile-menu>
-            <button class="modal-window_open-btn" type="button">Buy now</button>
-            <ul class="nav__list">
-                <li>
-                    <a href="#home">Home</a>
+            <button class="mobile-menu__close-btn" type="button" mobile-menu--close>
+                <svg class="mobile-menu__icon-close">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <button class="modal-window__open-btn--mobile-menu" type="button">Buy now</button>
+            <ul class="nav__list--mobile-menu">
+                <li class="nav__item">
+                    <a class="nav__link" href="#home">Home</a>
                 </li>
-                <li>
-                    <a href="#about">About us</a>
+                <li class="nav__item">
+                    <a class="nav__link" href="#about">About us</a>
                 </li>
-                <li>
-                    <a href="#how-it-s-made">How it's made?</a>
+                <li class="nav__item">
+                    <a class="nav__link" href="#how-it-s-made">How it's made?</a>
                 </li>
-                <li>
-                    <a href="#products">Our products</a>
+                <li class="nav__item">
+                    <a class="nav__link" href="#products">Our products</a>
                 </li>
-                <li>
-                    <a href="#contact">Contact</a>
+                <li class="nav__item">
+                    <a class="nav__link" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -68,7 +73,7 @@
     <!-- Hero -->
     <div class="hero">
         <div class="page-title">
-            <h1 class="page-title__header">Ice cream made with <span class="page-title__header--passion">passion</span></h1> 
+            <h1 class="page-title__header"><a id="about">Ice cream made with <span class="page-title__header--passion">passion</span></a></h1> 
             <div class="page-title__buttons">
                 <button class="page-title__buttons--products">Products</button>
                 <button class="page-title__buttons--how-its-made">How it's made?</button>
