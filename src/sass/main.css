@@ -1233,9 +1233,11 @@ img {
   }
   .about__item-first-description {
     font-size: 14px;
+    max-width: 340px;
   }
   .about__item-second-description {
     font-size: 14px;
+    max-width: 340px;
   }
   .about__img img {
     max-width: 100%;
@@ -1357,7 +1359,6 @@ img {
   padding-left: 20px;
   padding-right: 20px;
   height: 440px;
-  overflow: hidden;
 }
 
 .page-title {
@@ -1475,7 +1476,7 @@ img {
 
 .main-theme__bg-pic {
   position: relative;
-  width: 346px;
+  width: calc(100%-16px);
   height: 344px;
   left: 36px;
   top: 180px;
@@ -1496,6 +1497,12 @@ img {
 
 .hero-right-side {
   display: none;
+}
+
+@media screen and (min-width: 406px) {
+  .main-theme__bg-pic {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -2111,6 +2118,9 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 54px;
   margin-bottom: 113px;
   gap: 15px;
@@ -2140,30 +2150,13 @@ img {
 .contacts__button-left {
   color: #ffffff;
   background: #d41443;
-}
-
-.contacts__button-left:hover, .contacts__button-left:focus {
-  background: #c7133e;
   outline: none;
-}
-
-.contacts__button-left:hover .contacts__slider-arrow,
-.contacts__button-left:focus .contacts__slider-arrow {
   stroke: #ffffff;
 }
 
 .contacts__button-right {
   color: #d41443;
   background: #ffffff;
-}
-
-.contacts__button-right:hover, .contacts__button-right:focus {
-  background: #ecebeb;
-  outline: none;
-}
-
-.contacts__button-right:hover .contacts__slider-arrow,
-.contacts__button-right:focus .contacts__slider-arrow {
   stroke: #d41443;
 }
 
