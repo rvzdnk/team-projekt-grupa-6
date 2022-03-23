@@ -1,25 +1,14 @@
-.container-.advantages.advantages {
-  max-width: 100%;
-  margin: 0 auto;
-}
 
 .section2.advantages {
   background-color: #fff5f6;
-  width: 100vw;
   margin: 0 auto;
-  margin-bottom: -200px;
+
+  display: flex;
+  justify-content: center;
+  height: max-content;
+  padding-top: 150px;
 }
 
-.advantages__description {
-  font-family: 'Titan One';
-  font-size: 18px;
-  line-height: 1.167;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffa5ba;
-  margin: 0;
-  margin-bottom: 15px;
-}
 
 .advantages__title-hidden {
   visibility: hidden;
@@ -39,18 +28,21 @@
 
  .advantages__list-box {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 80px;
-  }
+}
+
+.advantages__list {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
 .advantages__item {
   background: #fff5f6;
-  max-width: 230px;
-  max-height: 156px;
   text-align: left;
-  position: relative;
+  justify-content: left;
   justify-content: center;
+
   align-items: initial;
   margin-left: 20px;
   margin-right: 70px;
@@ -68,12 +60,6 @@
 
   &::before {
     content: url(../images/advantages/advantages1.png);
-    display: block;
-    width: 230px;
-    height: 156px;
-    position: absolute;
-    top: -16px;
-    margin-bottom: 38px;
   }
 
   &:nth-child(2)::before {
@@ -111,20 +97,34 @@
 @media screen and (min-width: 768px) {
 
   .container-advantages {
-    max-width: 100%;
-    padding: 0;
+    max-width: 768px;
+    padding: 0 0 136px 0;
+    height: max-content;
+    justify-content: left;
+
   }
 
   .section2.advantages {
     background-color: #fff5f6;
     width: 100vw;
     margin: 0 auto;
-    padding-bottom: 660px;
+    padding-left: 36px;
+    justify-content: left;
   }
 
   .advantages__title-hidden {
     margin: 0;
     max-height: 0px;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .advantages__item:not(:last-child) {
+    margin-right: 60px;
   }
 
   .advantages__item-description {
@@ -135,7 +135,6 @@
     line-height: 174%;
     color: #000000;
     max-width: 180px;
-    max-height: 71px;
     margin: 0;
   }
   .advantages__item-title {
@@ -152,34 +151,21 @@
   }
   .advantages__list {
     display: flex;
-    margin-left: 36px;
-    margin-right: 76px;
-    margin-top: 66px;
   }
 
   .advantages__list-box {
     display: flex;
-    position: relative;
-    top: 130px;
-    left:0px;
   }
 
   .advantages__item {
-    max-width: 180px;
-    max-height: 226px;
     margin: 0;
 
     &:not(:last-child) {
-      margin-right: 60px;
       margin-bottom: 0;
     }
 
     &::before {
       content: url(../images/advantages/advantages1.png);
-      width: 220px;
-      height: 226px;
-      top: 0px;
-      left: auto;
     }
 
     &:nth-child(2)::before {
@@ -198,12 +184,9 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #d41443;
-
-    margin-top: 36px;
   }
   .advantages__item-description {
     max-width: 180px;
-    max-height: 67px;
     overflow: hidden;
 
     font-family: 'DM Sans';
@@ -220,7 +203,7 @@
     background-color: #fff5f6;
     width: 100vw;
     margin: 0 auto;
-    padding-bottom: 778px;
+    padding-bottom: 140px;
   }
  
   .container-advantages {
@@ -243,17 +226,17 @@
 
   .advantages__list-box {
     display: flex;
-    position: relative;
-    top: 55px;
-    left:0px;
+    width: 100%;
     margin-bottom: 0px;
   }
 
   .advantages__list {
     display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
     margin-left: 115px;
     margin-right: 115px;
-    margin-top: 112px;
   }
 
   .advantages__item-title {
@@ -264,16 +247,12 @@
     line-height: 1.1379;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-
     color: #d41443;
     padding: 0;
     margin-top: 0;
     max-width: 98px;
-    max-height: 65px;
   }
   .advantages__item {
-    max-width: 330px;
-    max-height: 222px;
     margin: 0;
 
     &:not(:last-child) {
@@ -282,9 +261,6 @@
 
     &::before {
       content: url(../images/advantages/advantages1.png);
-      width: 33px;
-      height: 50px;
-      top: -82px;
     }
 
     &:nth-child(2)::before {
