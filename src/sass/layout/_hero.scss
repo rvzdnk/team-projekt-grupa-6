@@ -101,13 +101,15 @@
 
 .main-theme__bg-pic{
     position: relative;
-    width: 346px;
+    width: calc(100% - 16px);
     height: 344px;
     left: 36px;
     top: 180px;
     z-index:100;
     transition: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;  
+    transition-duration: 250ms;
+    object-fit: cover;
+    object-position: left;
 }
 
 .hero-description{
