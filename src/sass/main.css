@@ -2201,7 +2201,9 @@ img {
 
 .footer__wrapper {
   max-width: 1280px;
-  margin: auto;
+  height: 100%;
+  margin-inline: auto;
+  padding-inline: 20px;
 }
 
 .footer__main-title {
@@ -2211,6 +2213,7 @@ img {
 
 .footer__subtitle1 {
   padding-left: 22px;
+  padding-bottom: 17px;
   font-family: 'Titan One', cursive;
   font-style: normal;
   font-weight: 400;
@@ -2244,6 +2247,7 @@ img {
 }
 
 .footer__links-background {
+  position: relative;
   width: 32px;
   height: 32px;
   background: #fea5bb;
@@ -2251,6 +2255,12 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   cursor: pointer;
 }
 
@@ -2258,9 +2268,19 @@ img {
   background: #d41443;
 }
 
-.footer__links-icon {
-  display: block;
-  margin: auto;
+.footer__links-icon-left {
+  position: absolute;
+  width: 20px;
+}
+
+.footer__links-icon-middle {
+  position: absolute;
+  width: 20px;
+}
+
+.footer__links-icon-right {
+  position: absolute;
+  width: 9px;
 }
 
 .footer__communication {
@@ -2303,42 +2323,116 @@ img {
   line-height: 152%;
   text-align: center;
   color: #907e82;
+  border-top: 1px solid #e1e1e1;
 }
 
-.cnts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+@media screen and (min-width: 768px) {
+  .footer__display {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer__main-title {
+    width: 360px;
+    padding-bottom: 91px;
+  }
+  .footer__subtitle1 {
+    padding-bottom: 16px;
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+  }
+  .footer__subtitle2 {
+    font-size: 48px;
+    line-height: 55px;
+    letter-spacing: 0.06em;
+  }
+  .footer__display-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    justify-items: right;
+  }
+  .footer__links {
+    margin-top: 0px;
+    gap: 30px;
+  }
+  .footer__links-background {
+    width: 34px;
+    height: 34px;
+  }
+  .footer__communication {
+    font-size: 14px;
+  }
+  .footer__rights {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .footer__rights-top {
+    padding-right: 4px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer__main-title {
+    width: 500px;
+    padding-bottom: 97px;
+  }
+  .footer__subtitle1 {
+    padding-bottom: 15px;
+    font-size: 30px;
+    line-height: 34px;
+    letter-spacing: 0.04em;
+  }
+  .footer__subtitle2 {
+    font-size: 58px;
+    line-height: 66px;
+    letter-spacing: 0.06em;
+  }
+  .footer__links {
+    gap: 25px;
+  }
+  .footer__links-background {
+    width: 34px;
+    height: 34px;
+  }
+  .footer__communication {
+    font-size: 16px;
+  }
+  .footer__rights {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .footer__rights-top {
+    padding-right: 4px;
+  }
+}
+
+.contacts {
   background-color: #fff5f6;
 }
 
-.cnts__background {
-  margin: 0 auto;
-  padding: 43px 20px;
-  width: 220px;
-  font-family: 'DM Sans', sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  background: #ffffff;
-  background-color: #FFF5F6;
-  -webkit-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-          box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-  border-radius: 24px;
-}
-
-.cnts__background--first {
-  margin-top: -84px;
-}
-
-.cnts__background:not(:last-child) {
-  margin-bottom: 20px;
-}
-
-.cnts__wrapper {
+.contacts__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2348,7 +2442,38 @@ img {
   height: 1022px;
 }
 
-.cnts__category {
+.contacts__display {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+
+.contacts__background {
+  margin: 0 auto;
+  padding: 43px 20px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+          box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+}
+
+.contacts__background--first {
+  margin-top: -84px;
+}
+
+.contacts__category {
   height: 16px;
   text-transform: uppercase;
   display: -webkit-box;
@@ -2366,64 +2491,64 @@ img {
   border-radius: 4px;
 }
 
-.cnts__category--cafe {
+.contacts__category--cafe {
   width: 80px;
   background: #f0d1a5;
 }
 
-.cnts__category--foodtruck {
+.contacts__category--foodtruck {
   width: 130px;
   background: #c2e297;
 }
 
-.cnts__place {
+.contacts__place {
   margin: 25px 0;
   padding-bottom: 25px;
   border-bottom: 1px solid #e1e1e1;
 }
 
-.cnts__location {
+.contacts__location {
   margin-bottom: 10px;
   color: #000000;
   line-height: 186%;
   letter-spacing: 0.04em;
 }
 
-.cnts__description {
+.contacts__description {
   line-height: 18px;
   color: #907e82;
 }
 
-.cnts__opening {
+.contacts__opening {
   margin: 25px 0;
 }
 
-.cnts__opening-days {
+.contacts__opening-days {
   line-height: 186%;
   color: #000000;
 }
 
-.cnts__opening-hours {
+.contacts__opening-hours {
   line-height: 186%;
   color: #ffa5ba;
 }
 
-.cnts__hours:not(:last-child) {
+.contacts__opening-hours:not(:last-child) {
   margin-bottom: 10px;
 }
 
-.cnts__digits {
+.contacts__digits {
   padding-top: 25px;
   border-top: 1px solid #e1e1e1;
 }
 
-.cnts__phone, .cnts__email {
+.contacts__phone, .contacts__email {
   text-decoration: none;
   line-height: 18px;
   color: #907e82;
 }
 
-.cnts__slider {
+.contacts__slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2436,7 +2561,7 @@ img {
   gap: 10px;
 }
 
-.cnts__button {
+.contacts__button {
   margin: 0 auto;
   width: 161.45px;
   height: 44px;
@@ -2456,20 +2581,195 @@ img {
   border: none;
 }
 
-.cnts__button:hover, .cnts__button:focus {
+.contacts__button:hover, .contacts__button:focus {
   color: #ffffff;
   background: #d41342;
   outline: none;
   cursor: pointer;
 }
 
-.cnts__button-icon {
-  width: 3.61px;
-  height: 8px;
+.contacts__button-left, .contacts__button-right {
+  margin: 0 auto;
+  width: 161.45px;
+  height: 44px;
+  font-weight: 700;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 22px;
+  border: none;
+  cursor: pointer;
 }
 
-.cnts__slider-arrow {
-  width: 3.61px;
+.contacts__button-left {
+  color: #ffffff;
+  background: #d41443;
+}
+
+.contacts__button-left:hover, .contacts__button-left:focus {
+  background: #c7133e;
+  outline: none;
+}
+
+.contacts__button-left:hover .contacts__slider-arrow,
+.contacts__button-left:focus .contacts__slider-arrow {
+  stroke: #ffffff;
+}
+
+.contacts__button-right {
+  color: #d41443;
+  background: #ffffff;
+}
+
+.contacts__button-right:hover, .contacts__button-right:focus {
+  background: #ecebeb;
+  outline: none;
+}
+
+.contacts__button-right:hover .contacts__slider-arrow,
+.contacts__button-right:focus .contacts__slider-arrow {
+  stroke: #ffffff;
+}
+
+.contacts__button-icon {
+  width: 20px;
+  height: 10px;
+  padding-left: 10px;
+}
+
+.contacts__slider-arrow-first {
+  width: 4.28px;
   height: 8px;
+  stroke: #ffffff;
+}
+
+.contacts__slider-arrow-second {
+  width: 4.28px;
+  height: 8px;
+  stroke: #d41443;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__display {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .contacts__background {
+    margin: 0;
+    margin-top: -84px;
+    padding: 50px 32px 50px 31px;
+    font-size: 14px;
+  }
+  .contacts__category {
+    height: 28px;
+    font-size: 16px;
+    line-height: 186%;
+  }
+  .contacts__category--cafe {
+    width: 73px;
+  }
+  .contacts__category--foodtruck {
+    width: 138px;
+  }
+  .contacts__place {
+    margin: 30px 0;
+    padding-bottom: 30px;
+  }
+  .contacts__opening {
+    margin: 30px 0;
+  }
+  .contacts__opening-hours:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  .contacts__digits {
+    padding-top: 30px;
+  }
+  .contacts__slider {
+    margin-top: 81px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 14.5px;
+  }
+  .contacts__button-left, .contacts__store-right {
+    margin: 0;
+    width: 191.45px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contacts {
+    background-image: url(../images/contacts_background.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: 50%;
+  }
+  .contacts__display {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 31px;
+  }
+  .contacts__background {
+    margin: 0;
+    margin-top: -102px;
+    padding: 51px 44px 62px 43px;
+    font-size: 16px;
+  }
+  .contacts__category {
+    height: 28px;
+    font-size: 16px;
+    line-height: 186%;
+  }
+  .contacts__category--cafe {
+    width: 73px;
+  }
+  .contacts__category--foodtruck {
+    width: 138px;
+  }
+  .contacts__place {
+    margin: 32px 0;
+    padding-bottom: 32px;
+  }
+  .contacts__opening {
+    margin: 32px 0;
+  }
+  .contacts__opening-hours:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  .contacts__digits {
+    padding-top: 32px;
+  }
+  .contacts__slider {
+    margin-top: 86px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 15px;
+  }
+  .contacts__button-left, .contacts__button-right {
+    margin: 0;
+    width: 198px;
+    font-size: 16px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,36 +1,35 @@
-.cnts {
+.contacts {
+  background-color: #fff5f6;
+
+  &__wrapper {
+      display: flex;
+	  margin: 4158px;
+	  position: absolute;
+	  max-width: 1280px;
+	  height: 1022px;
+  }	
+
+  &__display {
+      margin-top: 100px;
       display: flex;
       flex-direction: column;
-      background-color: #fff5f6;
-	
+      justify-content: center;
+      gap: 20px;
+  }
 
   &__background {
       margin: 0 auto;
       padding: 43px 20px;
-      width: 220px;
       font-family: 'DM Sans', sans-serif;
       font-size: 12px;
       font-weight: 500;
       background:  #ffffff;
-      background-color: #FFF5F6;
       box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
       border-radius: 24px;
-			&--first {
-      		margin-top: -84px;
-			}
+		&--first {
+      	margin-top: -84px;
+		}
   }
-
-  &__background:not(:last-child) {
-      margin-bottom: 20px;
-  }
-
-  &__wrapper {
-			display: flex;
-			margin: 4158px;
-			position: absolute;
-			max-width: 1280px;
-			height: 1022px;
-    }
 
   &__category {
       height: 16px;
@@ -43,11 +42,11 @@
       color: #ffffff;
       border-radius: 4px;
 
-    &--cafe {
+        &--cafe {
         width: 80px;
         background: #f0d1a5;
     }
-    &--foodtruck {
+        &--foodtruck {
         width: 130px;
         background: #c2e297;
     }
@@ -85,7 +84,7 @@
       color: #ffa5ba;
   }
 
-  &__hours:not(:last-child) {
+  &__opening-hours:not(:last-child) {
       margin-bottom: 10px;
   }
 
@@ -133,13 +132,168 @@
     }
   }
 
-  &__button-icon {
-      width: 3.61px;
-      height: 8px;
+  &__button-left,
+  &__button-right {
+      margin: 0 auto;
+      width: 161.45px;
+      height: 44px;
+      font-weight: 700;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 22px;
+      border: none;
+      cursor: pointer;
   }
 
-  &__slider-arrow {
-      width: 3.61px;
+  &__button-left {
+    color:  #ffffff;
+    background: #d41443;
+    &:hover,
+    &:focus {
+      background: #c7133e;
+      outline: none;
+    }
+    &:hover .contacts__slider-arrow,
+    &:focus .contacts__slider-arrow {
+      stroke:  #ffffff;
+    }
+  }
+
+  &__button-right {
+    color: #d41443;
+    background:  #ffffff;
+    &:hover,
+    &:focus {
+      background: #ecebeb;
+      outline: none;
+    }
+    &:hover .contacts__slider-arrow,
+    &:focus .contacts__slider-arrow {
+      stroke:  #ffffff;
+    }
+  }
+
+  &__button-icon {
+      width: 20px;
+      height: 10px;
+      padding-left: 10px;
+  }
+
+  &__slider-arrow-first {
+      width: 4.28px;
       height: 8px;
+      stroke:  #ffffff;
+  }
+  &__slider-arrow-second {
+      width: 4.28px;
+      height: 8px;
+      stroke:#d41443;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts {
+    &__display {
+      flex-direction: row;
+    }
+    &__background {
+      margin: 0;
+      margin-top: -84px;
+      padding: 50px 32px 50px 31px;
+      font-size: 14px;
+    }
+    &__category {
+      height: 28px;
+      font-size: 16px;
+      line-height: 186%;
+      &--cafe {
+        width: 73px;
+      }
+      &--foodtruck {
+        width: 138px;
+      }
+    }
+    &__place {
+      margin: 30px 0;
+      padding-bottom: 30px;
+    }
+    &__opening {
+      margin: 30px 0;
+    }
+    &__opening-hours:not(:last-child) {
+      margin-bottom: 16px;
+    }
+    &__digits {
+      padding-top: 30px;
+    }
+    &__slider {
+      margin-top: 81px;
+      flex-direction: row;
+      justify-content: center;
+      gap: 14.5px;
+    }
+    &__button-left,
+    &__store-right {
+      margin: 0;
+      width: 191.45px;
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contacts {
+    background-image: url(../images/contacts_background.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: 50%;
+    &__display {
+      flex-direction: row;
+      gap: 31px;
+    }
+    &__background {
+      margin: 0;
+      margin-top: -102px;
+      padding: 51px 44px 62px 43px;
+      font-size: 16px;
+    }
+    &__category {
+      height: 28px;
+      font-size: 16px;
+      line-height: 186%;
+      &--cafe {
+        width: 73px;
+      }
+      &--foodtruck {
+        width: 138px;
+      }
+    }
+    &__place {
+      margin: 32px 0;
+      padding-bottom: 32px;
+    }
+    &__opening {
+      margin: 32px 0;
+    }
+    &__opening-hours:not(:last-child) {
+      margin-bottom: 15px;
+    }
+    &__digits {
+      padding-top: 32px;
+    }
+    &__slider {
+      margin-top: 86px;
+      flex-direction: row;
+      justify-content: center;
+      gap: 15px;
+    }
+    &__button-left,
+    &__button-right {
+      margin: 0;
+      width: 198px;
+      font-size: 16px;
+    }
   }
 }
