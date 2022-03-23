@@ -192,3 +192,11 @@
   }
   
 }
+
+.gallery__img:hover,
+.gallery__img2:hover,
+.gallery__img3:hover {
+  transform: scale(1.3);
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;  
+}

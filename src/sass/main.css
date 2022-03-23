@@ -495,6 +495,17 @@ img {
   }
 }
 
+.gallery__img:hover,
+.gallery__img2:hover,
+.gallery__img3:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+}
+
 .container-products {
   width: 100%;
   margin: 0 auto;
@@ -732,16 +743,9 @@ img {
   }
 }
 
-.container-.advantages.advantages {
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-
 .section2.advantages {
   background-color: #fff5f6;
   margin: 0 auto;
-
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -752,20 +756,6 @@ img {
   height: -moz-max-content;
   height: max-content;
   padding-top: 150px;
-
-  margin-bottom: -200px;
-}
-
-.advantages__description {
-  font-family: 'Titan One';
-  font-size: 18px;
-  line-height: 1.167;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffa5ba;
-  margin: 0;
-  margin-bottom: 15px;
-
 }
 
 .advantages__title-hidden {
@@ -801,25 +791,14 @@ img {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-
 }
 
 .advantages__item {
   background: #fff5f6;
   text-align: left;
-
-
-  position: relative;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   -webkit-box-align: initial;
       -ms-flex-align: initial;
           align-items: initial;
@@ -877,7 +856,6 @@ img {
 
 @media screen and (min-width: 768px) {
   .container-advantages {
-
     max-width: 768px;
     padding: 0 0 136px 0;
     height: -webkit-max-content;
@@ -886,9 +864,6 @@ img {
     -webkit-box-pack: left;
         -ms-flex-pack: left;
             justify-content: left;
-
-    max-width: 100%;
-
   }
   .section2.advantages {
     background-color: #fff5f6;
@@ -991,10 +966,16 @@ img {
     width: 100vw;
     margin: 0 auto;
     padding-bottom: 140px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .container-advantages {
     max-width: 1280px;
     padding: 0;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
   }
   .advantages__title-hidden {
     margin: 0;
@@ -1020,15 +1001,14 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
+    width: 1280px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    margin-left: 115px;
-    margin-right: 115px;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
   }
   .advantages__item-title {
     font-family: 'Titan One';
