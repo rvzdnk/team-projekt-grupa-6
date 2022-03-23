@@ -368,7 +368,7 @@ img {
 @media screen and (min-width: 1200px) {
   .review-gallery__text-box {
     width: 926px;
-    margin: auto calc(calc(100vw - 926px) / 2);
+    margin: auto calc(calc(100% - 926px) / 2);
   }
 }
 
@@ -2140,30 +2140,13 @@ img {
 .contacts__button-left {
   color: #ffffff;
   background: #d41443;
-}
-
-.contacts__button-left:hover, .contacts__button-left:focus {
-  background: #c7133e;
   outline: none;
-}
-
-.contacts__button-left:hover .contacts__slider-arrow,
-.contacts__button-left:focus .contacts__slider-arrow {
   stroke: #ffffff;
 }
 
 .contacts__button-right {
   color: #d41443;
   background: #ffffff;
-}
-
-.contacts__button-right:hover, .contacts__button-right:focus {
-  background: #ecebeb;
-  outline: none;
-}
-
-.contacts__button-right:hover .contacts__slider-arrow,
-.contacts__button-right:focus .contacts__slider-arrow {
   stroke: #d41443;
 }
 
