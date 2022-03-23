@@ -120,7 +120,10 @@
    display: none; 
 }
 
-
+@media screen and (min-width: 406px){
+.main-theme__bg-pic{
+    width: 100%;}
+}
 
 @media screen and (min-width: 768px){
 .hero{

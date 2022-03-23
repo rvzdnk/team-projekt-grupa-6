@@ -1,15 +1,15 @@
 .container-.advantages.advantages {
-  width: 100vw;
+  max-width: 100%;
   margin: 0 auto;
-  height: 100vh;
 }
 
 .section2.advantages {
   background-color: #fff5f6;
   width: 100vw;
   margin: 0 auto;
-  padding-bottom: 921px;
+  margin-bottom: -200px;
 }
+
 .advantages__description {
   font-family: 'Titan One';
   font-size: 18px;
@@ -35,20 +35,14 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
-  padding-bottom: 140px;
 }
 
-.advantages__list-box {
+ .advantages__list-box {
   display: flex;
-  position: relative;
-  top: 276px;
-  margin-bottom: 100px;
-}
-
-.advantages__list {
-  padding: 0;
-  margin-top: 55px;
-}
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  }
 
 .advantages__item {
   background: #fff5f6;
@@ -56,7 +50,7 @@
   max-height: 156px;
   text-align: left;
   position: relative;
-  justify-content: left;
+  justify-content: center;
   align-items: initial;
   margin-left: 20px;
   margin-right: 70px;
@@ -102,6 +96,7 @@
   text-transform: uppercase;
   color: #d41443;
 }
+
 .advantages__item-description {
   max-width: 230px;
   margin-top: 19px;
@@ -113,15 +108,10 @@
   color: #000000;
 }
 
-@media screen and (min-width: 480px) {
-  .container-advantages {
-    max-width: 480px;
-  }
-}
 @media screen and (min-width: 768px) {
 
   .container-advantages {
-    max-width: 768px;
+    max-width: 100%;
     padding: 0;
   }
 
