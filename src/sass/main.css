@@ -368,7 +368,7 @@ img {
 @media screen and (min-width: 1200px) {
   .review-gallery__text-box {
     width: 926px;
-    margin: auto calc(calc(100vw - 926px) / 2);
+    margin: auto calc(calc(100% - 926px) / 2);
   }
 }
 
