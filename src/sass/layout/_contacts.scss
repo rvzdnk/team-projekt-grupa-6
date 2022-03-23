@@ -1,12 +1,12 @@
 .contacts {
-  background-color: #fff5f6;
 
   &__wrapper {
-      display: flex;
-	  margin: 4158px;
-	  position: absolute;
-	  max-width: 1280px;
-	  height: 1022px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: linear-gradient( 
+      #ffffff 8%,
+      #fff5f6 8%);
   }	
 
   &__display {
@@ -19,6 +19,7 @@
 
   &__background {
       margin: 0 auto;
+      max-width: 220px;
       padding: 43px 20px;
       font-family: 'DM Sans', sans-serif;
       font-size: 12px;
@@ -105,7 +106,6 @@
       flex-direction: column;
       margin-top: 54px;
       margin-bottom: 113px;
-      gap: 10px;
   }
 
   &__button {
@@ -245,10 +245,15 @@
 
 @media screen and (min-width: 1280px) {
   .contacts {
-    background-image: url(../images/contacts_background.png);
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    background-size: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+    }
     &__display {
       flex-direction: row;
       gap: 31px;
@@ -258,6 +263,7 @@
       margin-top: -102px;
       padding: 51px 44px 62px 43px;
       font-size: 16px;
+      max-width: 330px;
     }
     &__category {
       height: 28px;
